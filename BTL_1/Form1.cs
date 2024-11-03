@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using Restaurant.QuanLyKho;
 
 namespace BTL_1
 {
@@ -37,6 +38,14 @@ namespace BTL_1
         {
             BCDoanhThu dt = new BCDoanhThu();
             Addmenu(dt);
+        }
+
+        private void btnnhacc_Click(object sender, EventArgs e)
+        {
+            QLKho_Control_UI qLKho_Control_UI = new QLKho_Control_UI();
+            qLKho_Control_UI.Dock = DockStyle.Fill;
+            pnhienthi.Controls.Clear();
+            pnhienthi.Controls.Add(qLKho_Control_UI);
         }
     }
 }

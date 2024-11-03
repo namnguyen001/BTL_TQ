@@ -29,11 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbngayhientai = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbngayhomnay = new System.Windows.Forms.RadioButton();
             this.rbtheonam = new System.Windows.Forms.RadioButton();
             this.rbtheoquy = new System.Windows.Forms.RadioButton();
             this.rbtheothang = new System.Windows.Forms.RadioButton();
@@ -42,9 +45,6 @@
             this.rbbieudo = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.rbngayhomnay = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbngayhientai = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.gdgvTC = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -69,9 +69,30 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(247, 1055);
+            this.panel1.Size = new System.Drawing.Size(278, 1319);
             this.panel1.TabIndex = 4;
+            // 
+            // lbngayhientai
+            // 
+            this.lbngayhientai.AutoSize = true;
+            this.lbngayhientai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbngayhientai.ForeColor = System.Drawing.Color.Red;
+            this.lbngayhientai.Location = new System.Drawing.Point(19, 138);
+            this.lbngayhientai.Name = "lbngayhientai";
+            this.lbngayhientai.Size = new System.Drawing.Size(0, 29);
+            this.lbngayhientai.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(19, 98);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Ngày Hiện Tại:";
             // 
             // groupBox2
             // 
@@ -79,20 +100,36 @@
             this.groupBox2.Controls.Add(this.rbtheonam);
             this.groupBox2.Controls.Add(this.rbtheoquy);
             this.groupBox2.Controls.Add(this.rbtheothang);
-            this.groupBox2.Location = new System.Drawing.Point(0, 380);
+            this.groupBox2.Location = new System.Drawing.Point(0, 475);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(244, 263);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Size = new System.Drawing.Size(274, 329);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Mục";
+            // 
+            // rbngayhomnay
+            // 
+            this.rbngayhomnay.AutoSize = true;
+            this.rbngayhomnay.ForeColor = System.Drawing.Color.Black;
+            this.rbngayhomnay.Location = new System.Drawing.Point(33, 52);
+            this.rbngayhomnay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbngayhomnay.Name = "rbngayhomnay";
+            this.rbngayhomnay.Size = new System.Drawing.Size(139, 24);
+            this.rbngayhomnay.TabIndex = 6;
+            this.rbngayhomnay.TabStop = true;
+            this.rbngayhomnay.Text = "Ngày Hôm Nay";
+            this.rbngayhomnay.UseVisualStyleBackColor = true;
             // 
             // rbtheonam
             // 
             this.rbtheonam.AutoSize = true;
             this.rbtheonam.ForeColor = System.Drawing.Color.Black;
-            this.rbtheonam.Location = new System.Drawing.Point(29, 193);
+            this.rbtheonam.Location = new System.Drawing.Point(33, 241);
+            this.rbtheonam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rbtheonam.Name = "rbtheonam";
-            this.rbtheonam.Size = new System.Drawing.Size(92, 20);
+            this.rbtheonam.Size = new System.Drawing.Size(107, 24);
             this.rbtheonam.TabIndex = 5;
             this.rbtheonam.TabStop = true;
             this.rbtheonam.Text = "Theo Năm";
@@ -102,9 +139,10 @@
             // 
             this.rbtheoquy.AutoSize = true;
             this.rbtheoquy.ForeColor = System.Drawing.Color.Black;
-            this.rbtheoquy.Location = new System.Drawing.Point(29, 148);
+            this.rbtheoquy.Location = new System.Drawing.Point(33, 185);
+            this.rbtheoquy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rbtheoquy.Name = "rbtheoquy";
-            this.rbtheoquy.Size = new System.Drawing.Size(87, 20);
+            this.rbtheoquy.Size = new System.Drawing.Size(102, 24);
             this.rbtheoquy.TabIndex = 4;
             this.rbtheoquy.TabStop = true;
             this.rbtheoquy.Text = "Theo Quý";
@@ -114,9 +152,10 @@
             // 
             this.rbtheothang.AutoSize = true;
             this.rbtheothang.ForeColor = System.Drawing.Color.Black;
-            this.rbtheothang.Location = new System.Drawing.Point(29, 96);
+            this.rbtheothang.Location = new System.Drawing.Point(33, 120);
+            this.rbtheothang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rbtheothang.Name = "rbtheothang";
-            this.rbtheothang.Size = new System.Drawing.Size(102, 20);
+            this.rbtheothang.Size = new System.Drawing.Size(119, 24);
             this.rbtheothang.TabIndex = 3;
             this.rbtheothang.TabStop = true;
             this.rbtheothang.Text = "Theo Tháng";
@@ -126,9 +165,11 @@
             // 
             this.groupBox1.Controls.Add(this.rbbaocao);
             this.groupBox1.Controls.Add(this.rbbieudo);
-            this.groupBox1.Location = new System.Drawing.Point(3, 169);
+            this.groupBox1.Location = new System.Drawing.Point(3, 211);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(244, 149);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(274, 186);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kiểu Hiển Thị";
@@ -137,9 +178,10 @@
             // 
             this.rbbaocao.AutoSize = true;
             this.rbbaocao.ForeColor = System.Drawing.Color.Black;
-            this.rbbaocao.Location = new System.Drawing.Point(32, 47);
+            this.rbbaocao.Location = new System.Drawing.Point(36, 59);
+            this.rbbaocao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rbbaocao.Name = "rbbaocao";
-            this.rbbaocao.Size = new System.Drawing.Size(81, 20);
+            this.rbbaocao.Size = new System.Drawing.Size(96, 24);
             this.rbbaocao.TabIndex = 2;
             this.rbbaocao.TabStop = true;
             this.rbbaocao.Text = "Báo Cáo";
@@ -150,9 +192,10 @@
             // 
             this.rbbieudo.AutoSize = true;
             this.rbbieudo.ForeColor = System.Drawing.Color.Black;
-            this.rbbieudo.Location = new System.Drawing.Point(32, 95);
+            this.rbbieudo.Location = new System.Drawing.Point(36, 119);
+            this.rbbieudo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rbbieudo.Name = "rbbieudo";
-            this.rbbieudo.Size = new System.Drawing.Size(75, 20);
+            this.rbbieudo.Size = new System.Drawing.Size(91, 24);
             this.rbbieudo.TabIndex = 1;
             this.rbbieudo.TabStop = true;
             this.rbbieudo.Text = "Biểu Đồ";
@@ -167,62 +210,31 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 25);
+            this.label1.Size = new System.Drawing.Size(230, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Báo Cáo Doanh Thu";
-            // 
-            // rbngayhomnay
-            // 
-            this.rbngayhomnay.AutoSize = true;
-            this.rbngayhomnay.ForeColor = System.Drawing.Color.Black;
-            this.rbngayhomnay.Location = new System.Drawing.Point(29, 42);
-            this.rbngayhomnay.Name = "rbngayhomnay";
-            this.rbngayhomnay.Size = new System.Drawing.Size(121, 20);
-            this.rbngayhomnay.TabIndex = 6;
-            this.rbngayhomnay.TabStop = true;
-            this.rbngayhomnay.Text = "Ngày Hôm Nay";
-            this.rbngayhomnay.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 16);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Ngày Hiện Tại:";
-            // 
-            // lbngayhientai
-            // 
-            this.lbngayhientai.AutoSize = true;
-            this.lbngayhientai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbngayhientai.ForeColor = System.Drawing.Color.Red;
-            this.lbngayhientai.Location = new System.Drawing.Point(17, 110);
-            this.lbngayhientai.Name = "lbngayhientai";
-            this.lbngayhientai.Size = new System.Drawing.Size(0, 25);
-            this.lbngayhientai.TabIndex = 7;
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(247, 0);
+            this.panel2.Location = new System.Drawing.Point(278, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1421, 1055);
+            this.panel2.Size = new System.Drawing.Size(1598, 1319);
             this.panel2.TabIndex = 5;
             // 
             // gdgvTC
             // 
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            this.gdgvTC.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gdgvTC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gdgvTC.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gdgvTC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gdgvTC.ColumnHeadersHeight = 17;
             this.gdgvTC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gdgvTC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -232,22 +244,22 @@
             this.Sdt,
             this.TenHang,
             this.SoLuongHang});
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gdgvTC.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gdgvTC.DefaultCellStyle = dataGridViewCellStyle3;
             this.gdgvTC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gdgvTC.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gdgvTC.Location = new System.Drawing.Point(247, 0);
-            this.gdgvTC.Margin = new System.Windows.Forms.Padding(4);
+            this.gdgvTC.Location = new System.Drawing.Point(278, 0);
+            this.gdgvTC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gdgvTC.Name = "gdgvTC";
             this.gdgvTC.RowHeadersVisible = false;
             this.gdgvTC.RowHeadersWidth = 51;
-            this.gdgvTC.Size = new System.Drawing.Size(1421, 1055);
+            this.gdgvTC.Size = new System.Drawing.Size(1598, 1319);
             this.gdgvTC.TabIndex = 6;
             this.gdgvTC.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gdgvTC.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -314,13 +326,14 @@
             // 
             // BCDoanhThu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gdgvTC);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "BCDoanhThu";
-            this.Size = new System.Drawing.Size(1668, 1055);
+            this.Size = new System.Drawing.Size(1876, 1319);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

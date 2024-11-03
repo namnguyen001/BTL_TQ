@@ -124,7 +124,7 @@
   <data name="btndangxuat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        VwAAAFcBDhTleAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE6SURBVDhPY0jc
+        VgAAAFYB3FMHnAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE6SURBVDhPY0jc
         +n1hwpbv//xXf/1vsfDLf5XpX/4rTvuMjP8A8SGFqV8kGLCBlK3f/gDxfxhO2vLtvx/QMI1ZKIYA8ade
         qBZUgKwZGXuu/IpmwOdVUC2oAJtmEAa5ApsBCXXdXXEN3XpgzSCATTMIIwz4cl9h2ue1StO+FIHUJ9R2
         /wfid0nVnSYEDVCa9nmfyqT/7GCFUAA1AGEINs0gDHbB1E/JIEVAxT+RNCLhnvuEvDApN3cSe2Jdt39C
@@ -134,10 +134,14 @@
 </value>
   </data>
   <data name="btndangxuat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 753</value>
+    <value>0, 633</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btndangxuat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="btndangxuat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 45</value>
+    <value>295, 56</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btndangxuat.TabIndex" type="System.Int32, mscorlib">
@@ -164,7 +168,7 @@
   <data name="btntaikhoan.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        dAAAAHQBMYXlgQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEdSURBVDhPtZOx
+        cwAAAHMBY8FD/gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEdSURBVDhPtZOx
         SwMxFMaDuqiL4iCo6CXi6i4unRX6x+g/cGux2KVN7vwTXHUVFAe7iauTS9VNL4k4pt/jHpTGu6NQ/OA3
         5OX7IHkvEf+iXf29Lo27ktq9gxHIk97XGm83q5WGJan9EKEwjR+K67DItnopXZz+DZeo7OeEbfWSxp9X
         hQml/Rnb6jX3CUQaFmB+jMPgaaYekKjjCOSAJjBSA5fNNIXtvt1At28Rupfatmld1my7rPkbWrN9Wlt5
@@ -173,10 +177,13 @@
 </value>
   </data>
   <data name="btntaikhoan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 691</value>
+    <value>0, 557</value>
+  </data>
+  <data name="btntaikhoan.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="btntaikhoan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 45</value>
+    <value>295, 56</value>
   </data>
   <data name="btntaikhoan.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -203,10 +210,10 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 566</value>
+    <value>35, 497</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 25</value>
+    <value>209, 29</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -232,7 +239,7 @@
   <data name="btnkhachhang.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        dAAAAHQBMYXlgQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAF1SURBVDhPY6AZ
+        cwAAAHMBY8FD/gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAF1SURBVDhPY6AZ
         iNgUUhKxOeQe16rE3wpr4jdBhYkD4ZtDooGa/4Mww8pkMFZaFzsFKo0FmFVPZlCP+syg4H0BxI3cHLIc
         3QDx1fEPsallYDCu1GAwrf7PoBb5n0Hc/D+DeqhH+KaQfnQDpNfEn8WmFmhAOT9Q8C1YUNL6H4NanHTo
         5lBpoObHMAM4Vyb+0VoTZ4hNLdQVNcoMmkldDCqh9hABBoaE9QECwLCIU1wbO9NwbZQ8VBib2gYmBpPq
@@ -243,10 +250,13 @@
 </value>
   </data>
   <data name="btnkhachhang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 386</value>
+    <value>0, 404</value>
+  </data>
+  <data name="btnkhachhang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="btnkhachhang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 45</value>
+    <value>295, 56</value>
   </data>
   <data name="btnkhachhang.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -284,16 +294,19 @@
 </value>
   </data>
   <data name="btnnhacc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 335</value>
+    <value>-3, 341</value>
+  </data>
+  <data name="btnnhacc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="btnnhacc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 45</value>
+    <value>295, 56</value>
   </data>
   <data name="btnnhacc.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="btnnhacc.Text" xml:space="preserve">
-    <value>Quản Lý Nhà Cung Cấp</value>
+    <value>Quản Lý Kho</value>
   </data>
   <data name="&gt;&gt;btnnhacc.Name" xml:space="preserve">
     <value>btnnhacc</value>
@@ -313,7 +326,7 @@
   <data name="btnhoadon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
-        HAAAARwB37PomgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAI8SURBVEhLtZXP
+        GwAAARsBjfdO5QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAI8SURBVEhLtZXP
         TxNBFMd74eIf4Hm6mJgQDybcjP9B73rk1pD+UjExGtPSkxz8D/RguEE8yZGLFxXBQoaQHsDESIRCYwFJ
         xMNu2+f7Dp1ldzszXRJ4yTeZvnnz/WzfzOxmiMiqw/r4zYOal2PNspZaNa8FYTzI5VBjWqtlTFJ+cmy/
         5tXZzGfRCPmAYY3JayixVxd3eZFMmKSRxNqkX+zHQdUrcGGap7bJh0fUMxwMnjw0P3lf4TTRnw8v6Gh+
@@ -327,10 +340,13 @@
 </value>
   </data>
   <data name="btnhoadon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 284</value>
+    <value>0, 277</value>
+  </data>
+  <data name="btnhoadon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="btnhoadon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 45</value>
+    <value>295, 56</value>
   </data>
   <data name="btnhoadon.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -356,7 +372,7 @@
   <data name="btnnhanvien.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        dAAAAHQBMYXlgQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJvSURBVDhPfZJf
+        cwAAAHMBY8FD/gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJvSURBVDhPfZJf
         SFNhGIdP0D+8qS6CupC8SXLaytSRiLZNN3fOmVrJdFNEKz3zTzkzQiIKscBuhMyyoMwwrJsCu0vc1ESE
         ylLZJhFSKKmDYRLqCnX7db7vnA23RS88sIvveeA9e5nIKeWEo2aj0G7mBVcZb109xwmr5LeFs94t5quT
         5GfRw7KXdokPO1vYGv90bj2W9Q2A7jLmD2swn6DHrNKIzowSvxi/bzKZdsqaNES28MKgGMA9toaKQWhA
@@ -371,10 +387,13 @@
 </value>
   </data>
   <data name="btnnhanvien.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 182</value>
+    <value>0, 150</value>
+  </data>
+  <data name="btnnhanvien.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="btnnhanvien.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 45</value>
+    <value>295, 56</value>
   </data>
   <data name="btnnhanvien.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -417,10 +436,13 @@
 </value>
   </data>
   <data name="btndoanhthu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 233</value>
+    <value>0, 213</value>
+  </data>
+  <data name="btndoanhthu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="btndoanhthu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 45</value>
+    <value>295, 56</value>
   </data>
   <data name="btndoanhthu.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -458,10 +480,13 @@
 </value>
   </data>
   <data name="btnthucdon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 131</value>
+    <value>0, 86</value>
+  </data>
+  <data name="btnthucdon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="btnthucdon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 45</value>
+    <value>295, 56</value>
   </data>
   <data name="btnthucdon.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -484,7 +509,6 @@
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -495,7 +519,7 @@
     <value>0, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 48</value>
+    <value>167, 58</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -521,8 +545,11 @@
   <data name="pnmenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="pnmenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
   <data name="pnmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>256, 1055</value>
+    <value>288, 837</value>
   </data>
   <data name="pnmenu.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -543,10 +570,13 @@
     <value>Fill</value>
   </data>
   <data name="pnhienthi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>256, 0</value>
+    <value>288, 0</value>
+  </data>
+  <data name="pnhienthi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="pnhienthi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1668, 1055</value>
+    <value>1636, 837</value>
   </data>
   <data name="pnhienthi.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -567,10 +597,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>9, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1924, 1055</value>
+    <value>1924, 837</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

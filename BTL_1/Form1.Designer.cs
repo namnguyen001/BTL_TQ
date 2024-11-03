@@ -118,6 +118,7 @@
             this.btnnhacc.Image = ((System.Drawing.Image)(resources.GetObject("btnnhacc.Image")));
             this.btnnhacc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnnhacc.Name = "btnnhacc";
+            this.btnnhacc.Click += new System.EventHandler(this.btnnhacc_Click);
             // 
             // btnhoadon
             // 

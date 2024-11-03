@@ -79,6 +79,36 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyKho\QLKho_Control_UI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLyKho\QLKho_Control_UI.Designer.cs">
+      <DependentUpon>QLKho_Control_UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKho\QLNguyenLieu_UI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLyKho\QLNguyenLieu_UI.Designer.cs">
+      <DependentUpon>QLNguyenLieu_UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKho\QLNhaCungCap_UI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLyKho\QLNhaCungCap_UI.Designer.cs">
+      <DependentUpon>QLNhaCungCap_UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKho\QLNhapKho_UI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLyKho\QLNhapKho_UI.Designer.cs">
+      <DependentUpon>QLNhapKho_UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKho\QLXuatKho_UI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLyKho\QLXuatKho_UI.Designer.cs">
+      <DependentUpon>QLXuatKho_UI.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThongTinTaiKhoan\TaiKhoan.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -106,6 +136,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuanLyKho\QLKho_Control_UI.resx">
+      <DependentUpon>QLKho_Control_UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyKho\QLNguyenLieu_UI.resx">
+      <DependentUpon>QLNguyenLieu_UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyKho\QLNhaCungCap_UI.resx">
+      <DependentUpon>QLNhaCungCap_UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyKho\QLNhapKho_UI.resx">
+      <DependentUpon>QLNhapKho_UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyKho\QLXuatKho_UI.resx">
+      <DependentUpon>QLXuatKho_UI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThongTinTaiKhoan\TaiKhoan.resx">
       <DependentUpon>TaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +167,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QuanLyKho\Images\diet.png" />
+    <Content Include="QuanLyKho\Images\food.png" />
+    <Content Include="QuanLyKho\Images\foodd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="QuanLyKho\Query\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
