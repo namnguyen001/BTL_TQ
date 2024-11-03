@@ -1,0 +1,16 @@
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\bin\Debug\BTL_1.exe.config
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\bin\Debug\BTL_1.exe
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\bin\Debug\BTL_1.pdb
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\bin\Debug\Guna.UI2.dll
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\obj\Debug\BTL_1.csproj.AssemblyReference.cache
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\obj\Debug\BTL_1.Form1.resources
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\obj\Debug\BTL_1.Properties.Resources.resources
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\obj\Debug\BTL_1.csproj.GenerateResource.cache
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\obj\Debug\BTL_1.csproj.CoreCompileInputs.cache
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\obj\Debug\BTL_1.csproj.Up2Date
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\obj\Debug\BTL_1.exe
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\obj\Debug\BTL_1.pdb
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\obj\Debug\BTL_1.ThongTinTaiKhoan.TaiKhoan.resources
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\obj\Debug\BTL_1.DangNhap.resources
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\obj\Debug\BTL_1.BaoCaoDoanhThu.BCBieuDo.resources
+D:\Ki1_Nam3\LTTQ\BT\BTL_1\BTL_1\obj\Debug\BTL_1.BaoCaoDoanhThu.BCDoanhThu.resources

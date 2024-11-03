@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btndangxuat.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btndangxuat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        VwAAAFcBDhTleAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE6SURBVDhPY0jc
+        +n1hwpbv//xXf/1vsfDLf5XpX/4rTvuMjP8A8SGFqV8kGLCBlK3f/gDxfxhO2vLtvx/QMI1ZKIYA8ade
+        qBZUgKwZGXuu/IpmwOdVUC2oAJtmEAa5ApsBCXXdXXEN3XpgzSCATTMIIwz4cl9h2ue1StO+FIHUJ9R2
+        /wfid0nVnSYEDVCa9nmfyqT/7GCFUAA1AGEINs0gDHbB1E/JIEVAxT+RNCLhnvuEvDApN3cSe2Jdt39C
+        XVcoGKMaUkDIAFAamKQw/XOE/IxPlqhe6KoA+wmbZhBGBCJaLNR23QXbDAPYNIMwLgMwADbNIEwDA3An
+        5bfomkEYaMA/qOY/itM/H1Sc/UUcqgUVpGz/6gXUcBrdgORt35ZDlRAHUjZ9VwRqKoMY9v1D6pavflAp
+        PICBAQA+SP2EGouP8QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btndangxuat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 753</value>
+  </data>
+  <data name="btndangxuat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 45</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btndangxuat.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btndangxuat.Text" xml:space="preserve">
+    <value>Đăng Xuất</value>
+  </data>
+  <data name="&gt;&gt;btndangxuat.Name" xml:space="preserve">
+    <value>btndangxuat</value>
+  </data>
+  <data name="&gt;&gt;btndangxuat.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btndangxuat.Parent" xml:space="preserve">
+    <value>pnmenu</value>
+  </data>
+  <data name="&gt;&gt;btndangxuat.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btntaikhoan.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btntaikhoan.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        dAAAAHQBMYXlgQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEdSURBVDhPtZOx
+        SwMxFMaDuqiL4iCo6CXi6i4unRX6x+g/cGux2KVN7vwTXHUVFAe7iauTS9VNL4k4pt/jHpTGu6NQ/OA3
+        5OX7IHkvEf+iXf29Lo27ktq9gxHIk97XGm83q5WGJan9EKEwjR+K67DItnopXZz+DZeo7OeEbfWSxp9X
+        hQml/Rnb6jX3CUQaFmB+jMPgaaYekKjjCOSAJjBSA5fNNIXtvt1At28Rupfatmld1my7rPkbWrN9Wlt5
+        WIHpBcRHj3kmL8cmkgPbrTBXoozvcKzU5sXnKjZsbGyg2LkMyxwXYt/Y4wpTI3uZPeI4Zp8VByi+xqZ6
+        7BtlOD4RunyIkaWJdncw0kf6ZT7wuR7o7olxLXorHJlXQowBWTtPro83/SkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btntaikhoan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 691</value>
+  </data>
+  <data name="btntaikhoan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 45</value>
+  </data>
+  <data name="btntaikhoan.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btntaikhoan.Text" xml:space="preserve">
+    <value>Tài Khoản</value>
+  </data>
+  <data name="&gt;&gt;btntaikhoan.Name" xml:space="preserve">
+    <value>btntaikhoan</value>
+  </data>
+  <data name="&gt;&gt;btntaikhoan.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btntaikhoan.Parent" xml:space="preserve">
+    <value>pnmenu</value>
+  </data>
+  <data name="&gt;&gt;btntaikhoan.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 566</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 25</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Thông tin cá nhân </value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>pnmenu</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnkhachhang.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnkhachhang.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        dAAAAHQBMYXlgQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAF1SURBVDhPY6AZ
+        iNgUUhKxOeQe16rE3wpr4jdBhYkD4ZtDooGa/4Mww8pkMFZaFzsFKo0FmFVPZlCP+syg4H0BxI3cHLIc
+        3QDx1fEPsallYDCu1GAwrf7PoBb5n0Hc/D+DeqhH+KaQfnQDpNfEn8WmFmhAOT9Q8C1YUNL6H4NanHTo
+        5lBpoObHMAM4Vyb+0VoTZ4hNLdQVNcoMmkldDCqh9hABBoaE9QECwLCIU1wbO9NwbZQ8VBib2gYmBpPq
+        YAbNhOkMKsHtQAGmhoYGJqA3fEAxIb8mbrPK2rgGh4YGFqAcI4NZTQBYrWJwNwODA1DMtHoWsr+4DHwu
+        R2wJPYIeBoKrEj5yBxUvQQkDBa+rIAO+Igvatvr+g2lGNgCEhRck/UUxQMLqP8iA/zBBLg0ruEZsBoAw
+        h08pwgAQRjZA2NKWoAH8yQWUGpCPZoBJ9U6SDEjJQxgg6/IeHJEwAIr7iM3B13AZwLM68YfOhkRZqHJq
+        AAYGACRWOcrZbgR7AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnkhachhang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 386</value>
+  </data>
+  <data name="btnkhachhang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 45</value>
+  </data>
+  <data name="btnkhachhang.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnkhachhang.Text" xml:space="preserve">
+    <value>Quản Lý Khách Hàng</value>
+  </data>
+  <data name="&gt;&gt;btnkhachhang.Name" xml:space="preserve">
+    <value>btnkhachhang</value>
+  </data>
+  <data name="&gt;&gt;btnkhachhang.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnkhachhang.Parent" xml:space="preserve">
+    <value>pnmenu</value>
+  </data>
+  <data name="&gt;&gt;btnkhachhang.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnnhacc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnnhacc.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bQAAAG0BjlwfygAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAG9SURBVDhPnZJL
+        LwNRGIb7F2zsLGz9AZZIWkSq2lJWXdBLXBoJWjUn0dJ2YcdCRJqwERFEJRZEXCMqFbEoKVF1CaEdakbc
+        4tK8eqbUJYOyeJLvnHnf55xMjgSAKGGDLDtSLT3gLCWLUaLIEMtQRDcjOmkvW1Nwz5kV4CwK8ETFc4xS
+        K5b9tIgai7IieunuZZMcnLUUF3WFAnSOS3BF1BPXdmX6x05yiBc746fe8IxSCHMtpTivLRSgM917heWJ
+        Wp0UhHWyzHjZH22UfwwJJdYoE/giSHwnqkHeWpwmCWvzTmngsIfAP9qfEjQriBiVR3KmzTvnWpVYG3Jj
+        amomJWj29SbTScFBqwYGownNZvIrYVIuIiAVmB+ug89ThfmRRvR1t4mWKaKCY2clYtt63Pry8bBlwMZM
+        h2iZ8qPgOWhDLOT8v2Bh3I7gsuPvgiObBhdrOlyuloH11SMw24zQcgvYpVzsLLaht+v9n/x4g7t1OR4D
+        JkR8JsSCVtx4cxDba8fYgC01wf2OC49B17sg4MRzyPW94O0lnjo0eArosTLZjn2vAyfeBlxvWjA3Zgfn
+        d2LInRBYzAxYUpYQMCrPCwoQvLhuKVSwAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnnhacc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-3, 335</value>
+  </data>
+  <data name="btnnhacc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 45</value>
+  </data>
+  <data name="btnnhacc.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnnhacc.Text" xml:space="preserve">
+    <value>Quản Lý Nhà Cung Cấp</value>
+  </data>
+  <data name="&gt;&gt;btnnhacc.Name" xml:space="preserve">
+    <value>btnnhacc</value>
+  </data>
+  <data name="&gt;&gt;btnnhacc.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnnhacc.Parent" xml:space="preserve">
+    <value>pnmenu</value>
+  </data>
+  <data name="&gt;&gt;btnnhacc.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnhoadon.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnhoadon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
+        HAAAARwB37PomgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAI8SURBVEhLtZXP
+        TxNBFMd74eIf4Hm6mJgQDybcjP9B73rk1pD+UjExGtPSkxz8D/RguEE8yZGLFxXBQoaQHsDESIRCYwFJ
+        xMNu2+f7Dp1ldzszXRJ4yTeZvnnz/WzfzOxmiMiqw/r4zYOal2PNspZaNa8FYTzI5VBjWqtlTFJ+cmy/
+        5tXZzGfRCPmAYY3JayixVxd3eZFMmKSRxNqkX+zHQdUrcGGap7bJh0fUMxwMnjw0P3lf4TTRnw8v6Gh+
+        So2PF0tKCOQwh/j5rkx71QtI9J+cA7h/PBFriwakiZ23ZVoviihE6j1RgMGGhuaQBgRB4BQCgC95EYOo
+        jQcAx4wTQ30HIAh8knLNKdRoQALiwzuDs5w0hy7bIg2IQuANwKwNgBY0m9Ip1CQBGvLrpTcHAG6oEdDv
+        9+ns7K9TqDEBoEZRdDJshutvBKQNG2AlL/pOgO/71Gh8dgo1NsDqtOg5W5Q2bICNUvbQuclpwwaQZfHx
+        Wo6p1tZjUXdeNFt0Om3a3f2h1O12jQDeYGo+vTUx8lVhitPTE2q3W0q9Xs8IQHu49OpedlHzbwXxr5Wf
+        vMFTo1/XaSIKQGu2ZsRDTivfEABFPzgacCSXqf1pUY1/ry0pIZDDHEIDYL75SCxwKvSMASD9ydx/fV8t
+        XK3coZXpcdp+U6KvxdtKGCOHOdSsP7+n2tJ8kn2Q9Iv9CDX46H9/lu3qv24Tnhobqnue1FAiKhzhzYp4
+        xTdSNgriGFcfwg2FKc45jqJp7bko8x9ojYsufo99TAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnhoadon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 284</value>
+  </data>
+  <data name="btnhoadon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 45</value>
+  </data>
+  <data name="btnhoadon.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnhoadon.Text" xml:space="preserve">
+    <value>Thống Kê Hóa Đơn</value>
+  </data>
+  <data name="&gt;&gt;btnhoadon.Name" xml:space="preserve">
+    <value>btnhoadon</value>
+  </data>
+  <data name="&gt;&gt;btnhoadon.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnhoadon.Parent" xml:space="preserve">
+    <value>pnmenu</value>
+  </data>
+  <data name="&gt;&gt;btnhoadon.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnnhanvien.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnnhanvien.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        dAAAAHQBMYXlgQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJvSURBVDhPfZJf
+        SFNhGIdP0D+8qS6CupC8SXLaytSRiLZNN3fOmVrJdFNEKz3zTzkzQiIKscBuhMyyoMwwrJsCu0vc1ESE
+        ylLZJhFSKKmDYRLqCnX7db7vnA23RS88sIvveeA9e5nIKeWEo2aj0G7mBVcZb109xwmr5LeFs94t5quT
+        5GfRw7KXdokPO1vYGv90bj2W9Q2A7jLmD2swn6DHrNKIzowSvxi/bzKZdsqaNES28MKgGMA9toaKQWhA
+        5nlKATh1McxGqyMsYuaqHhKZ0PyfQGtqPjJTWSnCCx1Upjvzgj8YuHJGgC+vHBsWG8WjNFAWk/RozOJp
+        gMCfMvsteVWJjPzBqEzoutWMmRYV4HohMXCD0m+KwUD71VCAkJtZ9I4Rd3dvDbQ2XsP61EtsfunD2tx7
+        zDrtWBt7hM2h23h8vTYsoDmZ94cRpZWtAUL/q14se2co0xMOysTw6zCZkJXGggTWIgPni2xYmvscCsw4
+        h8BpC/8R4AIkMB0ZILifNWF9vAvekSdY7LFFyQSNSlyhmLc+IEI9Z0Wf4SJG1ZVwnSiER23Cck4R3AoW
+        TpG3B3Mob2L1uHBM+jf0GWenGEt+pbKat/pXdNLl+dIrsJCQA29bB+bjtbAzyVEM70hDSTIPVm05TW+h
+        V189GjwcEiCip7aJHg8RPqmO4MfNWIp9mxTpiTcuUZnMnRTTnsnsml+hgCh6SutCgY9KBb7VxVFIYGSf
+        eqM7kTsg69JA3bzbr2to86WXB+gKT7ujVnCI8uR+3YfvcRV7ZS16VlRl2p/HC8Y9CsPvhfjswPD2tMBY
+        TIaPiF8P5fPyM3kY5i+XwOqq6ghzWwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnnhanvien.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 182</value>
+  </data>
+  <data name="btnnhanvien.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 45</value>
+  </data>
+  <data name="btnnhanvien.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnnhanvien.Text" xml:space="preserve">
+    <value>Quản Lý Nhân Viên</value>
+  </data>
+  <data name="&gt;&gt;btnnhanvien.Name" xml:space="preserve">
+    <value>btnnhanvien</value>
+  </data>
+  <data name="&gt;&gt;btnnhanvien.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnnhanvien.Parent" xml:space="preserve">
+    <value>pnmenu</value>
+  </data>
+  <data name="&gt;&gt;btnnhanvien.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btndoanhthu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btndoanhthu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        pQAAAKUBcMTeVQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAALnSURBVEhL5ZRb
+        SNNRHMeX9NCjFZuzi5tkD/agkpBupNvsgv53BlaGJYUp1dIsxAr3kk2SGkRiiRRqaIY+SDoVhXqoHvKC
+        u3gttZvCCMrKJFzTcvPXOcf+c9v5Cxn21MPn4Xz/53y+/52z8xcBwIoRW2zfxL221xLbwGWh574Ihn5w
+        XBxotaWYTtDpzpMsfGx8bvPgCwju7AKxxfoqfHg4hFn3G8GQolavw9IbgJAHAxSdzkCekQIMbBkawSWd
+        sLHX8gUvCmIcGCbwglCbV7xMAUFi7aMlEqvdzDgwTEDRajMZ+TIFspdvaMH6ru4FvJj5FX4DLwh9ZOTL
+        FBA2dPfQkk22/tRAl9+AwnEyQTmBLxgdz5OPTeTzSPsGa8kWhdoHkwN9fgMKQgcYMc9B7iqUKGV+GHbG
+        zhfGKOF4lIRxYZgA779WUE5ISwGoiAFo3b5EeRhA2VZwF+14zrgwTIC3SCoo59FhrsQDtGD5wwgqJ3gu
+        RtE7EggTUBB6x4gDydEA1GxbLLglAzCKVnAPEOIYYQALeCdnD+0CuC0j22MR9GAEQwpClYFSX1yJiTCj
+        UMDsPhXde6MRgrIaP4gz6qdlx5oglPewYh6RaA0WncU4fcWelBSYVanAqVQu/EhKMvHzs5u/nznR7ILD
+        ddOUjPpP+JD4gmfqtdAakQP3w6ugWm6G2rA9/EJITZVjcZ6H4xrm1GqHKyHBgd++6adGE+udg8k2u/Kz
+        zEsFRxu+RpF8cUKHXEr/cpX4sMihkRKfxX/Cqhbg2/tWah+YI98fsdXeRrJVLSDfohB7/+JX1GLvIdnf
+        FZzbHe3JjTPMZEabnZnR1TTDrGKB0uTJjYep9EiYOhKJo/+yoMaYH9xYpk+feJA46ahQuBxlce6xcs3j
+        u9cvJQ8Z0u6NX9B+Hj2tdo/o1fMkI+x/+uS96lGHU9He4t7bZraSrKiyo7Sgrn8yp8rmJly7eecUcYtM
+        hfrikoKT8C8wFeqLfwFL5v0zoBqkngAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btndoanhthu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 233</value>
+  </data>
+  <data name="btndoanhthu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 45</value>
+  </data>
+  <data name="btndoanhthu.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btndoanhthu.Text" xml:space="preserve">
+    <value>Báo Cáo Doanh Thu</value>
+  </data>
+  <data name="&gt;&gt;btndoanhthu.Name" xml:space="preserve">
+    <value>btndoanhthu</value>
+  </data>
+  <data name="&gt;&gt;btndoanhthu.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btndoanhthu.Parent" xml:space="preserve">
+    <value>pnmenu</value>
+  </data>
+  <data name="&gt;&gt;btndoanhthu.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnthucdon.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnthucdon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bQAAAG0BjlwfygAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHKSURBVDhPlZPf
+        K0NhGMcPbhZKuZKbnVxQ/A2ilMSNS4oboZUbl3IzUpSNNbbJj1p+FNsI82PMGpsULqW0zFxYa2aTG7vj
+        63nPu9M54+zCqW+d877P83mf5/s+RwCQr62aWrjEMbj1B3CLCS56Z2ts71e86kMogkccpoQsCQWUlWJY
+        bC5PSXaLR1JQyADcjiuKrXNFncB2gww6kiEcwE/mm/EwLamez1tF8X1go5rHSZUwAOtLXbYMWJ6g4FnE
+        Jg2IGvs4IOkHzMUyJMtyBW4YT76YacKo/YwDBpqBoTbc97fjrqdFAUxT0TLEIxqFnNsS4HWlDteXQQ7w
+        u8kPL1J7M0i6pvIBMmStKkwA6ap4+UxyC8Fd4MqH9KEVqR3TXwCHfBUGhA+BmwAyp3a8eS0FACUMoGrB
+        WU8tnEv5q8/AQhTo9mUwGEhpA6y6ZL6JpkaM2riJjkfA9AB07H+g6zitDbCVnRe8xqUnwBIBOr3v6D3R
+        AJhojhYrWuntH4P0QoMkAxzl5LLWKAdoaEIjiiI0wkwPS8B8JU+26sgUge5R62dy6bOwlSonqcXKlk7m
+        yb8AOTFPNvUTmNMlYC76ZlfF3Ia97IL1nB8P4QcPYuuLc+NzpwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnthucdon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 131</value>
+  </data>
+  <data name="btnthucdon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 45</value>
+  </data>
+  <data name="btnthucdon.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnthucdon.Text" xml:space="preserve">
+    <value>Quản Lý Thực Đơn</value>
+  </data>
+  <data name="&gt;&gt;btnthucdon.Name" xml:space="preserve">
+    <value>btnthucdon</value>
+  </data>
+  <data name="&gt;&gt;btnthucdon.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnthucdon.Parent" xml:space="preserve">
+    <value>pnmenu</value>
+  </data>
+  <data name="&gt;&gt;btnthucdon.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 25pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 48</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>pnmenu</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="pnmenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="pnmenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnmenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 1055</value>
+  </data>
+  <data name="pnmenu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnmenu.Name" xml:space="preserve">
+    <value>pnmenu</value>
+  </data>
+  <data name="&gt;&gt;pnmenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnmenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnmenu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnhienthi.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnhienthi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>256, 0</value>
+  </data>
+  <data name="pnhienthi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1668, 1055</value>
+  </data>
+  <data name="pnhienthi.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnhienthi.Name" xml:space="preserve">
+    <value>pnhienthi</value>
+  </data>
+  <data name="&gt;&gt;pnhienthi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnhienthi.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnhienthi.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1924, 1055</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Nhà Hàng </value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
