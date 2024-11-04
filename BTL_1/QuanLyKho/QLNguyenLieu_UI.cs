@@ -272,10 +272,17 @@ namespace Restaurant.QuanLyKho
                         {
                             danhSachNguyenLieu.Remove(nguyenLieuXoa);
                             XoaNguyenLieu(int.Parse(maNguyenLieu));
+                            bindingSource.ResetBindings(false);
+
+                           
+                            bindingSource.DataSource = danhSachNguyenLieu;
+                            bindingSource.ResetBindings(false);
+
+                            cbMaNL.DataSource = null;  
+                            setUpCbMaNL();
                         }
                         LocNguyenLieu(cbLoc.SelectedItem.ToString());
                         lbSoLuong.Text = danhSachNguyenLieu.Count.ToString();
-                        setUpCbMaNL();
                     }
                 }
                 else if (dataNguyenLieu.Columns[e.ColumnIndex].Name == "Lay")
@@ -290,6 +297,7 @@ namespace Restaurant.QuanLyKho
                 }
             }
         }
+
 
 
         private void tbLaySL_KeyDown(object sender, KeyEventArgs e)

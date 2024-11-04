@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "D:\\C#\\BTL_TQ\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|d:\\c#\\btl_tq\\btl_1\\quanlykho\\qlxuatkho_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|solutionrelative:btl_1\\quanlykho\\qlxuatkho_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|d:\\c#\\btl_tq\\btl_1\\quanlykho\\qlxuatkho_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|solutionrelative:btl_1\\quanlykho\\qlxuatkho_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|d:\\c#\\btl_tq\\btl_1\\quanlykho\\qlnguyenlieu_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|solutionrelative:btl_1\\quanlykho\\qlnguyenlieu_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|D:\\C#\\BTL_TQ\\btl_1\\quanlykho\\qlnguyenlieu_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|solutionrelative:btl_1\\quanlykho\\qlnguyenlieu_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|D:\\C#\\BTL_TQ\\btl_1\\quanlykho\\model\\nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|solutionrelative:btl_1\\quanlykho\\model\\nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|D:\\C#\\BTL_TQ\\btl_1\\quanlykho\\qlnguyenlieu_ui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|solutionrelative:btl_1\\quanlykho\\qlnguyenlieu_ui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,6 +24,20 @@
           "DockedHeight": 352,
           "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QLXuatKho_UI.cs",
+              "DocumentMoniker": "D:\\C#\\BTL_TQ\\BTL_1\\QuanLyKho\\QLXuatKho_UI.cs",
+              "RelativeDocumentMoniker": "BTL_1\\QuanLyKho\\QLXuatKho_UI.cs",
+              "ToolTip": "D:\\C#\\BTL_TQ\\BTL_1\\QuanLyKho\\QLXuatKho_UI.cs",
+              "RelativeToolTip": "BTL_1\\QuanLyKho\\QLXuatKho_UI.cs",
+              "ViewState": "AQIAANoAAAAAAAAAAAAmwOgAAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T12:57:38.468Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -50,52 +60,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "QLNguyenLieu_UI.Designer.cs",
-              "DocumentMoniker": "D:\\C#\\BTL_TQ\\BTL_1\\QuanLyKho\\QLNguyenLieu_UI.Designer.cs",
-              "RelativeDocumentMoniker": "BTL_1\\QuanLyKho\\QLNguyenLieu_UI.Designer.cs",
-              "ToolTip": "D:\\C#\\BTL_TQ\\BTL_1\\QuanLyKho\\QLNguyenLieu_UI.Designer.cs",
-              "RelativeToolTip": "BTL_1\\QuanLyKho\\QLNguyenLieu_UI.Designer.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAkwGgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T11:42:48.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "NguyenLieu.cs",
-              "DocumentMoniker": "D:\\C#\\BTL_TQ\\BTL_1\\QuanLyKho\\Model\\NguyenLieu.cs",
-              "RelativeDocumentMoniker": "BTL_1\\QuanLyKho\\Model\\NguyenLieu.cs",
-              "ToolTip": "D:\\C#\\BTL_TQ\\BTL_1\\QuanLyKho\\Model\\NguyenLieu.cs",
-              "RelativeToolTip": "BTL_1\\QuanLyKho\\Model\\NguyenLieu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T05:56:10.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "QLNguyenLieu_UI.cs",
               "DocumentMoniker": "D:\\C#\\BTL_TQ\\BTL_1\\QuanLyKho\\QLNguyenLieu_UI.cs",
               "RelativeDocumentMoniker": "BTL_1\\QuanLyKho\\QLNguyenLieu_UI.cs",
               "ToolTip": "D:\\C#\\BTL_TQ\\BTL_1\\QuanLyKho\\QLNguyenLieu_UI.cs",
               "RelativeToolTip": "BTL_1\\QuanLyKho\\QLNguyenLieu_UI.cs",
-              "ViewState": "AQIAAAUBAAAAAAAAAAAAABoBAABUAAAA",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAAAD8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T05:11:16.498Z",
+              "WhenOpened": "2024-11-04T13:41:47.905Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QLNguyenLieu_UI.cs [Design]",
-              "DocumentMoniker": "D:\\C#\\BTL_TQ\\BTL_1\\QuanLyKho\\QLNguyenLieu_UI.cs",
-              "RelativeDocumentMoniker": "BTL_1\\QuanLyKho\\QLNguyenLieu_UI.cs",
-              "ToolTip": "D:\\C#\\BTL_TQ\\BTL_1\\QuanLyKho\\QLNguyenLieu_UI.cs [Design]",
-              "RelativeToolTip": "BTL_1\\QuanLyKho\\QLNguyenLieu_UI.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "QLXuatKho_UI.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\BTL_TQ\\BTL_1\\QuanLyKho\\QLXuatKho_UI.cs",
+              "RelativeDocumentMoniker": "BTL_1\\QuanLyKho\\QLXuatKho_UI.cs",
+              "ToolTip": "D:\\C#\\BTL_TQ\\BTL_1\\QuanLyKho\\QLXuatKho_UI.cs [Design]",
+              "RelativeToolTip": "BTL_1\\QuanLyKho\\QLXuatKho_UI.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T05:11:11.189Z",
+              "WhenOpened": "2024-11-04T12:37:28.989Z",
               "EditorCaption": " [Design]"
             }
           ]
