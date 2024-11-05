@@ -124,7 +124,7 @@
   <data name="btndangxuat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        VQAAAFUBceom8QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE6SURBVDhPY0jc
+        VAAAAFQBo63EFQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE6SURBVDhPY0jc
         +n1hwpbv//xXf/1vsfDLf5XpX/4rTvuMjP8A8SGFqV8kGLCBlK3f/gDxfxhO2vLtvx/QMI1ZKIYA8ade
         qBZUgKwZGXuu/IpmwOdVUC2oAJtmEAa5ApsBCXXdXXEN3XpgzSCATTMIIwz4cl9h2ue1StO+FIHUJ9R2
         /wfid0nVnSYEDVCa9nmfyqT/7GCFUAA1AGEINs0gDHbB1E/JIEVAxT+RNCLhnvuEvDApN3cSe2Jdt39C
@@ -168,7 +168,7 @@
   <data name="btntaikhoan.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        cgAAAHIBsYahGgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEdSURBVDhPtZOx
+        cAAAAHABznhikwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEdSURBVDhPtZOx
         SwMxFMaDuqiL4iCo6CXi6i4unRX6x+g/cGux2KVN7vwTXHUVFAe7iauTS9VNL4k4pt/jHpTGu6NQ/OA3
         5OX7IHkvEf+iXf29Lo27ktq9gxHIk97XGm83q5WGJan9EKEwjR+K67DItnopXZz+DZeo7OeEbfWSxp9X
         hQml/Rnb6jX3CUQaFmB+jMPgaaYekKjjCOSAJjBSA5fNNIXtvt1At28Rupfatmld1my7rPkbWrN9Wlt5
@@ -239,7 +239,7 @@
   <data name="btnkhachhang.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        cgAAAHIBsYahGgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAF1SURBVDhPY6AZ
+        cAAAAHABznhikwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAF1SURBVDhPY6AZ
         iNgUUhKxOeQe16rE3wpr4jdBhYkD4ZtDooGa/4Mww8pkMFZaFzsFKo0FmFVPZlCP+syg4H0BxI3cHLIc
         3QDx1fEPsallYDCu1GAwrf7PoBb5n0Hc/D+DeqhH+KaQfnQDpNfEn8WmFmhAOT9Q8C1YUNL6H4NanHTo
         5lBpoObHMAM4Vyb+0VoTZ4hNLdQVNcoMmkldDCqh9hABBoaE9QECwLCIU1wbO9NwbZQ8VBib2gYmBpPq
@@ -372,7 +372,7 @@
   <data name="btnnhanvien.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        cgAAAHIBsYahGgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJvSURBVDhPfZJf
+        cAAAAHABznhikwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJvSURBVDhPfZJf
         SFNhGIdP0D+8qS6CupC8SXLaytSRiLZNN3fOmVrJdFNEKz3zTzkzQiIKscBuhMyyoMwwrJsCu0vc1ESE
         ylLZJhFSKKmDYRLqCnX7db7vnA23RS88sIvveeA9e5nIKeWEo2aj0G7mBVcZb109xwmr5LeFs94t5quT
         5GfRw7KXdokPO1vYGv90bj2W9Q2A7jLmD2swn6DHrNKIzowSvxi/bzKZdsqaNES28MKgGMA9toaKQWhA
@@ -604,6 +604,9 @@
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>890, 560</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

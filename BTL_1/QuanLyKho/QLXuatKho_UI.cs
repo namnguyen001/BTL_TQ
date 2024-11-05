@@ -33,6 +33,7 @@ namespace Restaurant.QuanLyKho
         {
             cbLoc.DataSource = new List<string> {"Gần đây nhất", "Trong ngày", "Trong tuần", "Trong tháng" };
         }
+
         DataGridViewButtonColumn setUpButtonColumn(string name, string textShow)
         {
             DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
@@ -47,7 +48,7 @@ namespace Restaurant.QuanLyKho
         {
             lbWait.Visible = true;
             lbWait.Text = "Đang lấy dữ liệu";
-            DataTable lichsu = dtBase.ReadData("SELECT ID, MaNguyenLieu, TenNL, SoLuongTru, NgayLay, DonViTinh FROM NguyenLieuHistory WHERE NgayLay >= DATEADD(MONTH, -3, GETDATE()) ORDER BY NgayLay DESC");
+            DataTable lichsu = dtBase.ReadData("SELECT ID, MaNguyenLieu, TenNL,MaNV,TenNhanVien, SoLuongTru,DonViTinh , NgayLay FROM NguyenLieuLichSu WHERE NgayLay >= DATEADD(MONTH, -3, GETDATE()) ORDER BY NgayLay DESC");
             await Task.Delay(1000);
             lbWait.Text = "";
             lbWait.Visible = false;       
@@ -59,11 +60,14 @@ namespace Restaurant.QuanLyKho
                     ID = row["ID"].ToString(),
                     MaNguyenLieu = row["MaNguyenLieu"].ToString(),
                     TenNL = row["TenNL"].ToString(),
+                    MaNV = row["MaNV"].ToString(),
+                    TenNV = row["TenNhanVien"].ToString(),
                     SoLuongTru = row["SoLuongTru"].ToString(),
+                    DonViTinh = row["DonViTinh"].ToString(),
                     NgayLay = DateTime.TryParse(row["NgayLay"].ToString(), out DateTime ngayLayDate)
                                 ? ngayLayDate.ToString("dd/MM/yyyy")
-                                : string.Empty,
-                    DonViTinh = row["DonViTinh"].ToString()
+                                : string.Empty
+                   
                 };
                 lichSuNguyenLieu.Add(ls);
             }
@@ -87,11 +91,16 @@ namespace Restaurant.QuanLyKho
             dataGridView.Columns["ID"].HeaderText = "ID";
             dataGridView.Columns["ID"].Width = 50;
             dataGridView.Columns["MaNguyenLieu"].HeaderText = "Mã hàng";
-            dataGridView.Columns["MaNguyenLieu"].Width = 80;
+            dataGridView.Columns["MaNguyenLieu"].Width = 60;
             dataGridView.Columns["TenNL"].HeaderText = "Tên Nguyên Liệu";
+            dataGridView.Columns["MaNV"].HeaderText = "Mã NV Lấy";
+            dataGridView.Columns["MaNV"].Width = 80;
+            dataGridView.Columns["TenNV"].HeaderText = "NV lấy";
+            dataGridView.Columns["TenNV"].Width = 120;
             dataGridView.Columns["SoLuongTru"].HeaderText = "Số Lượng";
+            dataGridView.Columns["SoLuongTru"].Width = 60;
             dataGridView.Columns["DonViTinh"].HeaderText = "Đơn vị tính";
-            dataGridView.Columns["DonViTinh"].Width = 120;
+            dataGridView.Columns["DonViTinh"].Width = 80;
             dataGridView.Columns["NgayLay"].HeaderText = "Ngày Lấy";
             dataGridView.Columns["NgayLay"].DefaultCellStyle.Format = "dd/MM/yyyy";
 
@@ -100,6 +109,7 @@ namespace Restaurant.QuanLyKho
 
             dataGridView.CellClick += DataGridView_CellClick;
         }
+
         //function chuc nang---------------------------------------------------------------------------------------------
         private void LocLichSu(string loaiLoc)
         {
@@ -137,11 +147,12 @@ namespace Restaurant.QuanLyKho
             }
 
             bindingSource.DataSource = danhSachLoc;
+            lbSoLuong.Text = danhSachLoc?.Count.ToString() ?? "0"; // Handle null case safely
             bindingSource.ResetBindings(false);
         }
-        private void TimKiem()
+
+        private void TimKiem(string searchTerm)
         {
-            string searchTerm = tbTimKiem.Text.ToLower();
 
             if (string.IsNullOrWhiteSpace(searchTerm))
             {
@@ -164,37 +175,9 @@ namespace Restaurant.QuanLyKho
 
         private void XoaLichSu(int ID)
         {
-            dtBase.ChangeData($"DELETE FROM NguyenLieuHistory WHERE ID = '{ID}'");
-            
-        }
-        private async Task CapNhatHangAsync(string maNguyenLieu, int soLuong)
-        {
-            string query = $"SELECT SoLuongTonKho FROM NguyenLieu WHERE MaNguyenLieu = '{maNguyenLieu}';";
-            DataTable data = dtBase.ReadData(query);
-
-            if (data.Rows.Count > 0 && int.TryParse(data.Rows[0]["SoLuongTonKho"].ToString(), out int currentStock))
-            {
-                if (currentStock >= soLuong)
-                {
-                    string updateQuery = $"UPDATE NguyenLieu SET SoLuongTonKho = SoLuongTonKho - {soLuong} WHERE MaNguyenLieu = '{maNguyenLieu}';";
-                    await Task.Run(() => dtBase.ChangeData(updateQuery));
-                    dataLichSu.DataSource = null;
-                    await HienThiDuLieuAsync();
-                    setupDataGridView(dataLichSu);
-                }
-                else
-                {
-                    MessageBox.Show("Không đủ số lượng trong kho để thực hiện giao dịch.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Lỗi khi lấy thông tin số lượng tồn kho.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            dtBase.ChangeData($"DELETE FROM NguyenLieuLichSu WHERE ID = '{ID}'"); 
         }
 
-
-       
         //add event --------------------------------------------------------------------------------------------------
      
       
@@ -202,13 +185,10 @@ namespace Restaurant.QuanLyKho
         {
             LocLichSu(cbLoc.SelectedItem.ToString());
         }
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            TimKiem();
-        }
+     
         private void tbTimKiem_TextChanged(object sender, EventArgs e)
         {
-            TimKiem();
+            TimKiem(tbTimKiem.Text.ToLower());
         }
 
         private void tbTimKiem_KeyDown(object sender, KeyEventArgs e)
@@ -216,7 +196,7 @@ namespace Restaurant.QuanLyKho
             if (e.KeyValue == (char)Keys.Enter)
             {
                 e.Handled = true;
-                TimKiem();
+                TimKiem(tbTimKiem.Text.ToLower());
             }
         }
         private void DataGridView_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -53,5 +53,13 @@ namespace Restaurant.QuanLyKho
             panelControl.Controls.Clear();
             panelControl.Controls.Add(qLNhaCungCap_UI);
         }
+
+        private void QLKho_Control_UI_Load(object sender, EventArgs e)
+        {
+            QLNguyenLieu_UI qLNguyenLieu_UI = new QLNguyenLieu_UI();
+            qLNguyenLieu_UI.Dock = DockStyle.Fill;
+            panelControl.Controls.Clear();
+            panelControl.Controls.Add(qLNguyenLieu_UI);
+        }
     }
 }
