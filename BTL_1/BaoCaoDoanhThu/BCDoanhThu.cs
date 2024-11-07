@@ -49,5 +49,10 @@ namespace BTL_1.BaoCaoDoanhThu
         {
             lbngayhientai.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

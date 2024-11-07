@@ -35,3 +35,91 @@ D:\C#\BTL_TQ\BTL_1\obj\Debug\Restaurant.QuanLyKho.QLNguyenLieu_UI.resources
 D:\C#\BTL_TQ\BTL_1\obj\Debug\Restaurant.QuanLyKho.QLNhaCungCap_UI.resources
 D:\C#\BTL_TQ\BTL_1\obj\Debug\Restaurant.QuanLyKho.QLNhapKho_UI.resources
 D:\C#\BTL_TQ\BTL_1\obj\Debug\Restaurant.QuanLyKho.QLXuatKho_UI.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\bin\Debug\BTL_1.exe.config
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\bin\Debug\BTL_1.exe
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\bin\Debug\BTL_1.pdb
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\bin\Debug\Guna.UI2.dll
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.csproj.AssemblyReference.cache
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.BaoCaoDoanhThu.BCBieuDo.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.BaoCaoDoanhThu.BCDoanhThu.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.DangNhap.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.Form1.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.Properties.Resources.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\Restaurant.QuanLyKho.QLKho_Control_UI.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\Restaurant.QuanLyKho.QLNguyenLieu_UI.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\Restaurant.QuanLyKho.QLNhaCungCap_UI.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\Restaurant.QuanLyKho.QLNhapKho_UI.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\Restaurant.QuanLyKho.QLXuatKho_UI.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.ThongTinTaiKhoan.TaiKhoan.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.csproj.GenerateResource.cache
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.csproj.CoreCompileInputs.cache
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.csproj.Up2Date
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.exe
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.pdb
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.Menu.UserMenu.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.ThongKeHoaDon.UserHoaDon.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.Menu.ThemMon.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.ThongKeHoaDon.ChiTietHoaDon.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.Menu.SuaMon.resources
+C:\Study\lập trình trực quan\ví dụ trên lớp\BTL_TQ\BTL_1\obj\Debug\BTL_1.Menu.UserMenuItem.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.csproj.AssemblyReference.cache
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.BaoCaoDoanhThu.BCBieuDo.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.BaoCaoDoanhThu.BCDoanhThu.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.DangNhap.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.Form1.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.Menu.SuaMon.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.Menu.ThemMon.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.Menu.UserMenu.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.Menu.UserMenuItem.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.Properties.Resources.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\Restaurant.QuanLyKho.QLKho_Control_UI.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\Restaurant.QuanLyKho.QLNguyenLieu_UI.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\Restaurant.QuanLyKho.QLNhaCungCap_UI.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\Restaurant.QuanLyKho.QLNhapKho_UI.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\Restaurant.QuanLyKho.QLXuatKho_UI.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.ThongKeHoaDon.ChiTietHoaDon.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.ThongKeHoaDon.UserHoaDon.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.ThongTinTaiKhoan.TaiKhoan.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.csproj.GenerateResource.cache
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.csproj.CoreCompileInputs.cache
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.exe
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.pdb
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.DatBanMonAn.ThanhToan.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.DatBanMonAn.UserControlDatBanMonAn.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\BTL_1.exe.config
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\BTL_1.exe
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\BTL_1.pdb
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\ClosedXML.dll
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\ClosedXML.Parser.dll
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\ExcelNumberFormat.dll
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\Guna.UI2.dll
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\RBush.dll
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\SixLabors.Fonts.dll
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\System.Buffers.dll
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\System.IO.Packaging.dll
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\System.Memory.dll
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\System.Numerics.Vectors.dll
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\ClosedXML.pdb
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\ClosedXML.xml
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\ClosedXML.Parser.xml
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\ExcelNumberFormat.xml
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\RBush.xml
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\SixLabors.Fonts.xml
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\System.Buffers.xml
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\System.IO.Packaging.xml
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\System.Memory.xml
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\System.Numerics.Vectors.xml
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.csproj.Up2Date
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.KhachHang.SuaKhachHang.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.KhachHang.ThemKhachHang.resources
+C:\Study\lập trình trực quan\BTL_TQ\BTL_1\obj\Debug\BTL_1.KhachHang.UserControlKhachHang.resources

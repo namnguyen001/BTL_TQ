@@ -105,6 +105,7 @@
             this.btnkhachhang.Image = ((System.Drawing.Image)(resources.GetObject("btnkhachhang.Image")));
             this.btnkhachhang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnkhachhang.Name = "btnkhachhang";
+            this.btnkhachhang.Click += new System.EventHandler(this.btnkhachhang_Click);
             // 
             // btnnhacc
             // 
@@ -132,6 +133,7 @@
             this.btnhoadon.Image = ((System.Drawing.Image)(resources.GetObject("btnhoadon.Image")));
             this.btnhoadon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnhoadon.Name = "btnhoadon";
+            this.btnhoadon.Click += new System.EventHandler(this.btnhoadon_Click);
             // 
             // btnnhanvien
             // 
@@ -145,6 +147,7 @@
             this.btnnhanvien.Image = ((System.Drawing.Image)(resources.GetObject("btnnhanvien.Image")));
             this.btnnhanvien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnnhanvien.Name = "btnnhanvien";
+            this.btnnhanvien.Click += new System.EventHandler(this.btnnhanvien_Click);
             // 
             // btndoanhthu
             // 
@@ -172,6 +175,7 @@
             this.btnthucdon.Image = ((System.Drawing.Image)(resources.GetObject("btnthucdon.Image")));
             this.btnthucdon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnthucdon.Name = "btnthucdon";
+            this.btnthucdon.Click += new System.EventHandler(this.btnthucdon_Click);
             // 
             // label1
             // 

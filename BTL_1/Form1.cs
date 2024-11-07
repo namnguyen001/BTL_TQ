@@ -11,7 +11,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using Restaurant.QuanLyKho;
-
+using BTL_1.DatBanMonAn;
+using BTL_1.Menu;
+using BTL_1.ThongKeHoaDon;
+using BTL_1.KhachHang;
 namespace BTL_1
 {
     public partial class Form1 : Form
@@ -46,6 +49,30 @@ namespace BTL_1
             qLKho_Control_UI.Dock = DockStyle.Fill;
             pnhienthi.Controls.Clear();
             pnhienthi.Controls.Add(qLKho_Control_UI);
+        }
+
+        private void btnthucdon_Click(object sender, EventArgs e)
+        {
+            UserMenu userMenu = new UserMenu();
+            Addmenu(userMenu);
+        }
+
+        private void btnhoadon_Click(object sender, EventArgs e)
+        {
+            UserHoaDon userHoaDon = new UserHoaDon();
+            Addmenu(userHoaDon);
+        }
+
+        private void btnnhanvien_Click(object sender, EventArgs e)
+        {
+            UserControlDatBanMonAn userControlDatBanMonAn = new UserControlDatBanMonAn();
+            Addmenu(userControlDatBanMonAn);
+        }
+
+        private void btnkhachhang_Click(object sender, EventArgs e)
+        {
+            UserControlKhachHang user = new UserControlKhachHang();
+            Addmenu(user);
         }
     }
 }

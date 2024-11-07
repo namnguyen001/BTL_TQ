@@ -69,9 +69,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(278, 1319);
+            this.panel1.Size = new System.Drawing.Size(185, 857);
             this.panel1.TabIndex = 4;
             // 
             // lbngayhientai
@@ -79,20 +79,23 @@
             this.lbngayhientai.AutoSize = true;
             this.lbngayhientai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbngayhientai.ForeColor = System.Drawing.Color.Red;
-            this.lbngayhientai.Location = new System.Drawing.Point(19, 138);
+            this.lbngayhientai.Location = new System.Drawing.Point(13, 90);
+            this.lbngayhientai.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbngayhientai.Name = "lbngayhientai";
-            this.lbngayhientai.Size = new System.Drawing.Size(0, 29);
+            this.lbngayhientai.Size = new System.Drawing.Size(0, 20);
             this.lbngayhientai.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 98);
+            this.label2.Location = new System.Drawing.Point(13, 64);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 20);
+            this.label2.Size = new System.Drawing.Size(92, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Ngày Hiện Tại:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // groupBox2
             // 
@@ -100,11 +103,11 @@
             this.groupBox2.Controls.Add(this.rbtheonam);
             this.groupBox2.Controls.Add(this.rbtheoquy);
             this.groupBox2.Controls.Add(this.rbtheothang);
-            this.groupBox2.Location = new System.Drawing.Point(0, 475);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Location = new System.Drawing.Point(0, 309);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Size = new System.Drawing.Size(274, 329);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.groupBox2.Size = new System.Drawing.Size(183, 214);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Mục";
@@ -113,10 +116,10 @@
             // 
             this.rbngayhomnay.AutoSize = true;
             this.rbngayhomnay.ForeColor = System.Drawing.Color.Black;
-            this.rbngayhomnay.Location = new System.Drawing.Point(33, 52);
-            this.rbngayhomnay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbngayhomnay.Location = new System.Drawing.Point(22, 34);
+            this.rbngayhomnay.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.rbngayhomnay.Name = "rbngayhomnay";
-            this.rbngayhomnay.Size = new System.Drawing.Size(139, 24);
+            this.rbngayhomnay.Size = new System.Drawing.Size(97, 17);
             this.rbngayhomnay.TabIndex = 6;
             this.rbngayhomnay.TabStop = true;
             this.rbngayhomnay.Text = "Ngày Hôm Nay";
@@ -126,10 +129,10 @@
             // 
             this.rbtheonam.AutoSize = true;
             this.rbtheonam.ForeColor = System.Drawing.Color.Black;
-            this.rbtheonam.Location = new System.Drawing.Point(33, 241);
-            this.rbtheonam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbtheonam.Location = new System.Drawing.Point(22, 157);
+            this.rbtheonam.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.rbtheonam.Name = "rbtheonam";
-            this.rbtheonam.Size = new System.Drawing.Size(107, 24);
+            this.rbtheonam.Size = new System.Drawing.Size(75, 17);
             this.rbtheonam.TabIndex = 5;
             this.rbtheonam.TabStop = true;
             this.rbtheonam.Text = "Theo Năm";
@@ -139,10 +142,10 @@
             // 
             this.rbtheoquy.AutoSize = true;
             this.rbtheoquy.ForeColor = System.Drawing.Color.Black;
-            this.rbtheoquy.Location = new System.Drawing.Point(33, 185);
-            this.rbtheoquy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbtheoquy.Location = new System.Drawing.Point(22, 120);
+            this.rbtheoquy.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.rbtheoquy.Name = "rbtheoquy";
-            this.rbtheoquy.Size = new System.Drawing.Size(102, 24);
+            this.rbtheoquy.Size = new System.Drawing.Size(72, 17);
             this.rbtheoquy.TabIndex = 4;
             this.rbtheoquy.TabStop = true;
             this.rbtheoquy.Text = "Theo Quý";
@@ -152,10 +155,10 @@
             // 
             this.rbtheothang.AutoSize = true;
             this.rbtheothang.ForeColor = System.Drawing.Color.Black;
-            this.rbtheothang.Location = new System.Drawing.Point(33, 120);
-            this.rbtheothang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbtheothang.Location = new System.Drawing.Point(22, 78);
+            this.rbtheothang.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.rbtheothang.Name = "rbtheothang";
-            this.rbtheothang.Size = new System.Drawing.Size(119, 24);
+            this.rbtheothang.Size = new System.Drawing.Size(84, 17);
             this.rbtheothang.TabIndex = 3;
             this.rbtheothang.TabStop = true;
             this.rbtheothang.Text = "Theo Tháng";
@@ -165,11 +168,11 @@
             // 
             this.groupBox1.Controls.Add(this.rbbaocao);
             this.groupBox1.Controls.Add(this.rbbieudo);
-            this.groupBox1.Location = new System.Drawing.Point(3, 211);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Location = new System.Drawing.Point(2, 137);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(274, 186);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.groupBox1.Size = new System.Drawing.Size(183, 121);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kiểu Hiển Thị";
@@ -178,10 +181,10 @@
             // 
             this.rbbaocao.AutoSize = true;
             this.rbbaocao.ForeColor = System.Drawing.Color.Black;
-            this.rbbaocao.Location = new System.Drawing.Point(36, 59);
-            this.rbbaocao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbbaocao.Location = new System.Drawing.Point(24, 38);
+            this.rbbaocao.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.rbbaocao.Name = "rbbaocao";
-            this.rbbaocao.Size = new System.Drawing.Size(96, 24);
+            this.rbbaocao.Size = new System.Drawing.Size(66, 17);
             this.rbbaocao.TabIndex = 2;
             this.rbbaocao.TabStop = true;
             this.rbbaocao.Text = "Báo Cáo";
@@ -192,10 +195,10 @@
             // 
             this.rbbieudo.AutoSize = true;
             this.rbbieudo.ForeColor = System.Drawing.Color.Black;
-            this.rbbieudo.Location = new System.Drawing.Point(36, 119);
-            this.rbbieudo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbbieudo.Location = new System.Drawing.Point(24, 77);
+            this.rbbieudo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.rbbieudo.Name = "rbbieudo";
-            this.rbbieudo.Size = new System.Drawing.Size(91, 24);
+            this.rbbieudo.Size = new System.Drawing.Size(63, 17);
             this.rbbieudo.TabIndex = 1;
             this.rbbieudo.TabStop = true;
             this.rbbieudo.Text = "Biểu Đồ";
@@ -209,18 +212,19 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(230, 29);
+            this.label1.Size = new System.Drawing.Size(154, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Báo Cáo Doanh Thu";
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(278, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Location = new System.Drawing.Point(185, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1598, 1319);
+            this.panel2.Size = new System.Drawing.Size(1066, 857);
             this.panel2.TabIndex = 5;
             // 
             // gdgvTC
@@ -254,12 +258,11 @@
             this.gdgvTC.DefaultCellStyle = dataGridViewCellStyle3;
             this.gdgvTC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gdgvTC.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gdgvTC.Location = new System.Drawing.Point(278, 0);
-            this.gdgvTC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gdgvTC.Location = new System.Drawing.Point(185, 0);
             this.gdgvTC.Name = "gdgvTC";
             this.gdgvTC.RowHeadersVisible = false;
             this.gdgvTC.RowHeadersWidth = 51;
-            this.gdgvTC.Size = new System.Drawing.Size(1598, 1319);
+            this.gdgvTC.Size = new System.Drawing.Size(1066, 857);
             this.gdgvTC.TabIndex = 6;
             this.gdgvTC.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gdgvTC.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -326,14 +329,14 @@
             // 
             // BCDoanhThu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gdgvTC);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "BCDoanhThu";
-            this.Size = new System.Drawing.Size(1876, 1319);
+            this.Size = new System.Drawing.Size(1251, 857);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
