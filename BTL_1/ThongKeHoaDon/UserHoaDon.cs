@@ -18,16 +18,23 @@ namespace BTL_1.ThongKeHoaDon
         public UserHoaDon()
         {
             InitializeComponent();
-            // Đăng ký sự kiện SelectedIndexChanged cho cbbThoiGian
             cbbThoiGian.SelectedIndexChanged += cbbThoiGian_SelectedIndexChanged;
+            cbbThang.SelectedIndexChanged += cbbThang_SelectedIndexChanged;
+            dgvHoaDon.SelectionChanged += dgvHoaDon_SelectionChanged;
             lbNgayHienTai.Text = "Ngày Hiện Tại:" + DateTime.Now.ToString("dd/MM/yyyy");
+            dgvHoaDon.ReadOnly = true;
+            dgvHoaDon.AllowUserToAddRows = false;
+            txtTimKiem.KeyDown += txtTimKiem_KeyDown;
         }
 
         private void UserHoaDon_Load(object sender, EventArgs e)
         {
-            // Thiết lập danh sách các lựa chọn cho ComboBox
-            cbbThoiGian.DataSource = new List<string> { "Tất cả", "Hôm nay", "Tháng", "Năm" };
-            // Gọi phương thức để hiển thị hóa đơn ban đầu
+            cbbThoiGian.DataSource = new List<string> { "Tất cả", "Hôm nay", "Tháng" };
+            List<string> list = new List<string> { "1", "2", "3", "4", "5",
+            "6","7","8","9","10","11","12",};
+            cbbThang.DataSource = list;
+            cbbThang.SelectedItem = DateTime.Now.Month.ToString();
+            cbbThang.Enabled = false;                    
             HienThiHoaDon();
         }
 
@@ -51,9 +58,23 @@ namespace BTL_1.ThongKeHoaDon
                     MessageBox.Show("Không có dữ liệu cho ngày hôm nay.");
                 }
             }
+            else if (hienthitheo == "Tháng")
+            {
+                cbbThang.Enabled = true; // Hiển thị ComboBox tháng khi chọn "Tháng"
 
-            // Gán DataTable vào DataGridView
-            dgvHoaDon.DataSource = hoaDon;
+                // Kiểm tra xem có tháng nào được chọn trong cbbThang không
+                if (cbbThang.SelectedItem != null)
+                {
+                    int selectedMonth = int.Parse(cbbThang.SelectedItem.ToString());
+                    hoaDon = dtBase.ReadData($"SELECT * FROM HoaDon WHERE MONTH(NgayXuat) = {selectedMonth}");
+
+                    if (hoaDon.Rows.Count == 0)
+                    {
+                        MessageBox.Show("Không có dữ liệu cho tháng này.");
+                    }
+                }
+            }
+                dgvHoaDon.DataSource = hoaDon;
 
             // Đảm bảo rằng DataGridView đã có các cột và có thể tùy chỉnh tiêu đề
             if (dgvHoaDon.Columns.Contains("MaHoaDon"))
@@ -77,22 +98,19 @@ namespace BTL_1.ThongKeHoaDon
         // Sự kiện khi chọn một mục trong ComboBox
         private void cbbThoiGian_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Gọi lại phương thức để hiển thị hóa đơn theo lựa chọn hiện tại
+            cbbThang.Enabled = false;
             HienThiHoaDon();
         }
 
+        private void cbbThang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            HienThiHoaDon();
+        }
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            // Kiểm tra nếu chuỗi nhập vào chứa khoảng trắng hoặc không phải là số
-            if (string.IsNullOrWhiteSpace(txtTimKiem.Text) || !System.Text.RegularExpressions.Regex.IsMatch(txtTimKiem.Text, @"^\d+$"))
-            {
-                MessageBox.Show("Vui lòng chỉ nhập số và không để trống.");
-                return;
-            }
-
             // Chuyển đổi giá trị nhập vào sang kiểu int
-            int maHoaDon = int.Parse(txtTimKiem.Text);
-            DataTable hoaDon = dtBase.ReadData("SELECT * FROM HoaDon WHERE MaHoaDon = " + maHoaDon);
+            string maHoaDon = txtTimKiem.Text;
+            DataTable hoaDon = dtBase.ReadData($"SELECT * FROM HoaDon WHERE MaHoaDon = '{maHoaDon}'");
 
             // Gán DataTable vào DataGridView
             dgvHoaDon.DataSource = hoaDon;
@@ -101,29 +119,24 @@ namespace BTL_1.ThongKeHoaDon
             if (hoaDon.Rows.Count == 0)
             {
                 MessageBox.Show("Không tìm thấy hóa đơn nào.");
+                HienThiHoaDon();
             }
         }
-
-        private void HoaDon_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btnChiTietHD_Click(object sender, EventArgs e)
         {
             // Kiểm tra xem có hàng nào được chọn không
             if (dgvHoaDon.SelectedRows.Count > 0)
             {
                 // Lấy mã hóa đơn từ hàng đã chọn
-                int maHoaDon = Convert.ToInt32(dgvHoaDon.SelectedRows[0].Cells["MaHoaDon"].Value);
-                DataTable ban = dtBase.ReadData($"select TenBan from ChiTietHoaDon cthd" +
+                string maHoaDon = dgvHoaDon.SelectedRows[0].Cells["MaHoaDon"].Value.ToString();
+                DataTable ban = dtBase.ReadData($"select dsb.TenBan,hd.TongTien,hd.NgayXuat from ChiTietHoaDon cthd" +
                     " join HoaDon hd on cthd.MaHoaDon = hd.MaHoaDon" +
                     " join DanhSachBan dsb on hd.MaBan = dsb.MaBan" +
-                    $" where hd.MaHoaDon = {maHoaDon}");
+                    $" where hd.MaHoaDon = '{maHoaDon}'");
                 String tenBan = ban.Rows[0]["TenBan"].ToString();
-
-                // Tạo một đối tượng ChiTietHoaDon và truyền mã hóa đơn
-                ChiTietHoaDon chiTietHoaDon = new ChiTietHoaDon(maHoaDon,tenBan);
+                String tongTien = ban.Rows[0]["TongTien"].ToString();
+                DateTime ngayXuat = DateTime.Parse(ban.Rows[0]["NgayXuat"].ToString());
+                ChiTietHoaDon chiTietHoaDon = new ChiTietHoaDon(maHoaDon,tenBan,tongTien,ngayXuat);
                 chiTietHoaDon.ShowDialog();
             }
             else
@@ -132,7 +145,41 @@ namespace BTL_1.ThongKeHoaDon
             }
         }
 
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        private void dgvHoaDon_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvHoaDon.SelectedRows.Count > 0)
+            {
+                // Lấy ngày xuất từ cột "NgayXuat" của hàng được chọn
+                DateTime ngayXuat = Convert.ToDateTime(dgvHoaDon.SelectedRows[0].Cells["NgayXuat"].Value);
+                string maHoaDon = (dgvHoaDon.SelectedRows[0].Cells["MaHoaDon"].Value).ToString();
+                // Hiển thị ngày xuất trong txtThoiGian theo định dạng dd/MM/yyyy
+                txtThoiGian.Text = ngayXuat.ToString("dd/MM/yyyy");
+                txtMaHoaDon.Text = maHoaDon;
+            }
+            else
+            {
+                txtThoiGian.Text = string.Empty;
+                txtMaHoaDon.Text = string.Empty;
+            }
+        }
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtTimKiem.Text))
+            {
+                HienThiHoaDon();
+            }
+        }
+        private void txtTimKiem_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Kiểm tra nếu phím Enter được nhấn
+            if (e.KeyCode == Keys.Enter)
+            {
+                // Gọi sự kiện btnTimKiem_Click
+                btnTimKiem_Click(sender, e);
+            }
+        }
+
+        private void btnXuatFile_Click(object sender, EventArgs e)
         {
 
         }

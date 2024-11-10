@@ -16,10 +16,10 @@ namespace BTL_1.Menu
             ThemMenu();
         }
 
-        private void ThemMenu()
+        public void ThemMenu()
         {
             // Lấy dữ liệu từ bảng DanhMuc
-            DataTable menu = dtbase.ReadData("Select MaDanhMuc, TenDanhMuc from DanhMuc ORDER BY MaDanhMuc");
+            DataTable menu = dtbase.ReadData($"Select MaDanhMuc, TenDanhMuc from DanhMuc Where MaDanhMuc != {1} ORDER BY MaDanhMuc");
 
             // Lặp qua từng hàng trong bảng để tạo các tab
             foreach (DataRow row in menu.Rows)
@@ -37,7 +37,7 @@ namespace BTL_1.Menu
                 newTabPage.Tag = maDanhMuc;
 
                 DataTable items;
-                if (maDanhMuc == "1") 
+                if (maDanhMuc == "2") 
                 {
                     items = dtbase.ReadData("SELECT * FROM MonAn");
                 }
@@ -56,6 +56,9 @@ namespace BTL_1.Menu
                     userItem.Anh = anhDuongDan;
                     userItem.Padding = new Padding(3);
 
+                    // Đăng ký sự kiện khi thêm UserMenuItem vào Tab
+                    userItem.MonUpdated += (s, args) => { TabMenu.TabPages.Clear(); ThemMenu(); };
+                    userItem.MonDeleted += (s, args) => { TabMenu.TabPages.Clear(); ThemMenu(); };
 
                     flowPanel.Controls.Add(userItem);
 
@@ -90,9 +93,11 @@ namespace BTL_1.Menu
                         string maDanhMuc = selectedTab.Tag?.ToString(); // Giả sử mã danh mục được lưu trong Tag của TabPage
 
                         // Lấy dữ liệu món ăn có tên chứa từ khóa không phân biệt chữ hoa chữ thường
+                    
                         DataTable searchResults = dtbase.ReadData(
-                            $"SELECT * FROM MonAn WHERE TenMonAn COLLATE SQL_Latin1_General_CP1_CI_AS LIKE '%{keyword}%' " +
-                            (maDanhMuc != "1" ? $"AND MaDanhMuc = '{maDanhMuc}'" : ""));
+                            $"SELECT * FROM MonAn WHERE " +
+                            $"TenMonAn COLLATE SQL_Latin1_General_Cp1253_CI_AI LIKE '%{keyword}%' " +
+                            (maDanhMuc != "2" ? $"AND MaDanhMuc = '{maDanhMuc}'" : ""));
 
                         if (searchResults.Rows.Count > 0)
                         {
@@ -109,6 +114,7 @@ namespace BTL_1.Menu
                                     Anh = $"ImageMenu/{itemRow["Anh"].ToString()}",
                                     Padding = new Padding(3)
                                 };
+
 
                                 flowPanel.Controls.Add(userItem);
                             }
@@ -146,28 +152,21 @@ namespace BTL_1.Menu
 
                     if (flowPanel != null)
                     {
-                        // Xóa tất cả các control hiện có trong FlowLayoutPanel
                         flowPanel.Controls.Clear();
 
-                        // Lấy mã danh mục từ tab hiện tại
-                        string maDanhMuc = selectedTab.Tag?.ToString(); // Lấy mã danh mục từ Tag
+                        string maDanhMuc = selectedTab.Tag?.ToString(); 
+                        DataTable items;
 
-                        // Truy vấn dữ liệu ban đầu từ cơ sở dữ liệu
-                        DataTable originalItems;
-
-                        // Kiểm tra điều kiện với mã danh mục phù hợp
-                        if (maDanhMuc == "0") // Nếu mã danh mục là "0", lấy tất cả món ăn
+                        if (maDanhMuc == "2")
                         {
-                            originalItems = dtbase.ReadData("SELECT * FROM MonAn");
+                            items = dtbase.ReadData("SELECT * FROM MonAn");
                         }
                         else
                         {
-                            // Lấy các món ăn theo mã danh mục
-                            originalItems = dtbase.ReadData($"SELECT * FROM MonAn WHERE MaDanhMuc = '{maDanhMuc}'");
+                            items = dtbase.ReadData($"SELECT * FROM MonAn WHERE MaDanhMuc = '{maDanhMuc}'");
                         }
 
-                        // Thêm lại các UserMenuItem vào FlowLayoutPanel
-                        foreach (DataRow itemRow in originalItems.Rows)
+                        foreach (DataRow itemRow in items.Rows)
                         {
                             UserMenuItem userItem = new UserMenuItem
                             {
@@ -188,15 +187,20 @@ namespace BTL_1.Menu
         {
             ThemMon themMon = new ThemMon("Them Mon");
             themMon.MonAdded += ThemMon_MonAdded;
+           themMon.MonDeleted += ThemMon_MonDeleted;
             themMon.Show();
         }
         private void ThemMon_MonAdded(object sender, EventArgs e)
         {
-            // Cập nhật lại menu sau khi thêm món thành công
             TabMenu.TabPages.Clear();
             ThemMenu();
         }
-
+        private void ThemMon_MonDeleted(object sender, EventArgs e)
+        {
+            TabMenu.TabPages.Clear();
+            ThemMenu();
+        }
+      
 
     }
 }

@@ -34,8 +34,9 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtMaHoaDon = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cbbThang = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnChiTietHD = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnTimKiem = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -81,7 +82,7 @@
             this.txtThoiGian.PasswordChar = '\0';
             this.txtThoiGian.PlaceholderText = "";
             this.txtThoiGian.SelectedText = "";
-            this.txtThoiGian.Size = new System.Drawing.Size(200, 26);
+            this.txtThoiGian.Size = new System.Drawing.Size(156, 26);
             this.txtThoiGian.TabIndex = 5;
             // 
             // guna2PictureBox2
@@ -140,8 +141,9 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.txtMaHoaDon);
+            this.guna2Panel2.Controls.Add(this.cbbThang);
             this.guna2Panel2.Controls.Add(this.btnChiTietHD);
-            this.guna2Panel2.Controls.Add(this.guna2GradientButton1);
             this.guna2Panel2.Controls.Add(this.txtTimKiem);
             this.guna2Panel2.Controls.Add(this.btnTimKiem);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel5);
@@ -153,6 +155,42 @@
             this.guna2Panel2.Size = new System.Drawing.Size(895, 110);
             this.guna2Panel2.TabIndex = 1;
             // 
+            // txtMaHoaDon
+            // 
+            this.txtMaHoaDon.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMaHoaDon.DefaultText = "";
+            this.txtMaHoaDon.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMaHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMaHoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMaHoaDon.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMaHoaDon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMaHoaDon.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaHoaDon.ForeColor = System.Drawing.Color.Red;
+            this.txtMaHoaDon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMaHoaDon.Location = new System.Drawing.Point(79, 11);
+            this.txtMaHoaDon.Name = "txtMaHoaDon";
+            this.txtMaHoaDon.PasswordChar = '\0';
+            this.txtMaHoaDon.PlaceholderText = "";
+            this.txtMaHoaDon.SelectedText = "";
+            this.txtMaHoaDon.Size = new System.Drawing.Size(125, 26);
+            this.txtMaHoaDon.TabIndex = 10;
+            // 
+            // cbbThang
+            // 
+            this.cbbThang.BackColor = System.Drawing.Color.Transparent;
+            this.cbbThang.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbThang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbThang.Enabled = false;
+            this.cbbThang.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbThang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbThang.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbbThang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbbThang.ItemHeight = 30;
+            this.cbbThang.Location = new System.Drawing.Point(477, 16);
+            this.cbbThang.Name = "cbbThang";
+            this.cbbThang.Size = new System.Drawing.Size(63, 36);
+            this.cbbThang.TabIndex = 9;
+            // 
             // btnChiTietHD
             // 
             this.btnChiTietHD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -162,35 +200,18 @@
             this.btnChiTietHD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnChiTietHD.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnChiTietHD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnChiTietHD.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnChiTietHD.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChiTietHD.ForeColor = System.Drawing.Color.White;
-            this.btnChiTietHD.Location = new System.Drawing.Point(769, 52);
+            this.btnChiTietHD.Location = new System.Drawing.Point(750, 59);
             this.btnChiTietHD.Name = "btnChiTietHD";
             this.btnChiTietHD.Size = new System.Drawing.Size(107, 34);
             this.btnChiTietHD.TabIndex = 8;
             this.btnChiTietHD.Text = "Xem CTHD";
             this.btnChiTietHD.Click += new System.EventHandler(this.btnChiTietHD_Click);
             // 
-            // guna2GradientButton1
-            // 
-            this.guna2GradientButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton1.BorderRadius = 15;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(656, 52);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(107, 34);
-            this.guna2GradientButton1.TabIndex = 7;
-            this.guna2GradientButton1.Text = "Xuất file excel";
-            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
-            // 
             // txtTimKiem
             // 
+            this.txtTimKiem.BorderRadius = 10;
             this.txtTimKiem.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTimKiem.DefaultText = "";
             this.txtTimKiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -200,13 +221,14 @@
             this.txtTimKiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTimKiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimKiem.Location = new System.Drawing.Point(35, 67);
+            this.txtTimKiem.Location = new System.Drawing.Point(35, 66);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.PasswordChar = '\0';
-            this.txtTimKiem.PlaceholderText = "";
+            this.txtTimKiem.PlaceholderText = "Tìm Kiếm Theo Mã Hóa Đơn";
             this.txtTimKiem.SelectedText = "";
-            this.txtTimKiem.Size = new System.Drawing.Size(169, 19);
+            this.txtTimKiem.Size = new System.Drawing.Size(176, 27);
             this.txtTimKiem.TabIndex = 6;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // btnTimKiem
             // 
@@ -216,9 +238,9 @@
             this.btnTimKiem.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnTimKiem.ImageRotate = 0F;
             this.btnTimKiem.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTimKiem.Location = new System.Drawing.Point(3, 62);
+            this.btnTimKiem.Location = new System.Drawing.Point(3, 66);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnTimKiem.PressedState.ImageSize = new System.Drawing.Size(30, 30);
             this.btnTimKiem.Size = new System.Drawing.Size(30, 31);
             this.btnTimKiem.TabIndex = 5;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
@@ -226,7 +248,7 @@
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(208, 28);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(289, 28);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(63, 15);
             this.guna2HtmlLabel5.TabIndex = 4;
@@ -242,20 +264,20 @@
             this.cbbThoiGian.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbbThoiGian.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbbThoiGian.ItemHeight = 30;
-            this.cbbThoiGian.Location = new System.Drawing.Point(277, 16);
+            this.cbbThoiGian.Location = new System.Drawing.Point(358, 16);
             this.cbbThoiGian.Name = "cbbThoiGian";
-            this.cbbThoiGian.Size = new System.Drawing.Size(144, 36);
+            this.cbbThoiGian.Size = new System.Drawing.Size(113, 36);
             this.cbbThoiGian.TabIndex = 3;
             // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(15, 16);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(3, 16);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(105, 17);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(70, 17);
             this.guna2HtmlLabel4.TabIndex = 2;
-            this.guna2HtmlLabel4.Text = "Danh sách hóa đơn";
+            this.guna2HtmlLabel4.Text = "Mã Hóa Đơn";
             // 
             // guna2CustomGradientPanel1
             // 
@@ -316,7 +338,6 @@
             this.dgvHoaDon.ThemeStyle.RowsStyle.Height = 22;
             this.dgvHoaDon.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvHoaDon.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvHoaDon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HoaDon_CellClick);
             // 
             // UserHoaDon
             // 
@@ -355,9 +376,10 @@
         private Guna.UI2.WinForms.Guna2ComboBox cbbThoiGian;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2GradientButton btnChiTietHD;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2TextBox txtTimKiem;
         private Guna.UI2.WinForms.Guna2ImageButton btnTimKiem;
         private Guna.UI2.WinForms.Guna2DataGridView dgvHoaDon;
+        private Guna.UI2.WinForms.Guna2ComboBox cbbThang;
+        private Guna.UI2.WinForms.Guna2TextBox txtMaHoaDon;
     }
 }

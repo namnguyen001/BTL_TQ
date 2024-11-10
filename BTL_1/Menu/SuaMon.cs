@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BTL_1.Menu
@@ -14,12 +10,14 @@ namespace BTL_1.Menu
     public partial class SuaMon : Form
     {
         classes.DataBaseProcess dtbase = new classes.DataBaseProcess();
-        string imageAnh;
+        private string imageAnh ; // Đường dẫn ảnh đã chọn
+        Dictionary<string, string> danhMucDict = new Dictionary<string, string>();
         public event EventHandler MonUpdated;
-       
+        public event EventHandler MonDeleted;
 
-        // Thêm thuộc tính MaDanhMuc để lưu mã danh mục
         public string MaDanhMuc { get; set; }
+        public int MaMonAn { get; private set; }
+        public string TenDanhMuc { get; set; }
 
         public string TenMon
         {
@@ -35,64 +33,97 @@ namespace BTL_1.Menu
         {
             get { return imageAnh; }
         }
-        public int MaMonAn { get; private set; }
-        public string TenDanhMuc { get; set; }  // Thêm thuộc tính tên danh mục
 
+        private void SuaMon_Load(object sender, EventArgs e)
+        {
+            DataTable danhMuc = dtbase.ReadData($"select MaDanhMuc, TenDanhMuc from DanhMuc where MaDanhMuc != {1}");
+            if (danhMuc.Rows.Count > 0)
+            {
+                foreach (DataRow dataRow in danhMuc.Rows)
+                {
+                    string maDanhMuc = dataRow["MaDanhMuc"].ToString();
+                    string tenDanhMuc = dataRow["TenDanhMuc"].ToString();
+                    danhMucDict[tenDanhMuc] = maDanhMuc; 
+                    cbbLoaiMon.Items.Add(tenDanhMuc); 
+                }
+            }
+            cbbLoaiMon.SelectedItem = TenDanhMuc;
+        }
         public SuaMon(string tenMon, string giaTien, string anh, string tenDanhMuc)
         {
             InitializeComponent();
-
+            cbbLoaiMon.SelectedItem = tenDanhMuc;
             txtTenMon.Text = tenMon;
             txtDonGia.Text = giaTien;
+            imageAnh = anh;
             ptbAnh.ImageLocation = anh;
 
-            DataTable dt = dtbase.ReadData($"select MaDanhMuc,MaMonAn from MonAn where TenMonAn = N'{txtTenMon.Text}'");
-            // Hiển thị tên danh mục lên một TextBox hoặc Label trong form
+
+            DataTable dt = dtbase.ReadData($"select MaDanhMuc, MaMonAn from MonAn where TenMonAn = N'{txtTenMon.Text}'");
             string maDanhMuc = dt.Rows[0]["MaDanhMuc"].ToString();
-            MaDanhMuc = maDanhMuc;  // Gán MaDanhMuc từ cơ sở dữ liệu
+            MaDanhMuc = maDanhMuc;
             MaMonAn = int.Parse(dt.Rows[0]["MaMonAn"].ToString());
-            // Lấy tên danh mục từ MaDanhMuc
             DataTable dm = dtbase.ReadData($"select TenDanhMuc from DanhMuc where MaDanhMuc = {MaDanhMuc}");
-            string tendm = dm.Rows[0]["TenDanhMuc"].ToString();
-            TenDanhMuc = tendm;
-            txtLoaiMon.Text = TenDanhMuc;
+            TenDanhMuc = dm.Rows[0]["TenDanhMuc"].ToString();
+            cbbLoaiMon.SelectedItem = TenDanhMuc;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            string tenMon = txtTenMon.Text;
-            string giaTien = txtDonGia.Text;
-            string anh = imageAnh;
+            string loaiMon = cbbLoaiMon.Text;  
+            string tenMon = txtTenMon.Text;    
+            string giaTien = txtDonGia.Text;   
+            string anh = this.Anh;             
+            anh = anh.Replace("ImageMenu/", "");
 
-            // Cập nhật cơ sở dữ liệu với thông tin mới, sử dụng MaDanhMuc thay vì TenDanhMuc
-            string query = $"UPDATE MonAn SET TenMonAn = N'{tenMon}', GiaTien = '{giaTien}', Anh = '{anh}' WHERE MaDanhMuc = {MaDanhMuc} and MaMonAn = {MaMonAn}";
             try
             {
-                dtbase.ChangeData(query);
-                MessageBox.Show("Món ăn đã được lưu thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+                DataTable maDmMoi = dtbase.ReadData($"SELECT MaDanhMuc FROM DanhMuc WHERE TenDanhMuc = N'{loaiMon}'");
+                int newMaDanhMuc = int.Parse(maDmMoi.Rows[0]["MaDanhMuc"].ToString());
+                if (newMaDanhMuc > 0)
+                {
+                    string updateMonAnQuery = $"UPDATE MonAn SET TenMonAn = N'{tenMon}', GiaTien = '{giaTien}', Anh = '{anh}', MaDanhMuc = {newMaDanhMuc} WHERE MaMonAn = {MaMonAn}";
+                    dtbase.ChangeData(updateMonAnQuery);
+
+                    // Thông báo thành công
+                    MessageBox.Show("Món ăn đã được cập nhật thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy mã danh mục mới.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                // Thực hiện callback nếu có
                 MonUpdated?.Invoke(this, EventArgs.Empty);
+
+                // Đóng form
                 this.Close();
             }
             catch (Exception ex)
             {
+                // Thông báo lỗi
                 MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+
         private void btnAnh_Click(object sender, EventArgs e)
         {
-            string[] file;
-            OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "Bitmap Images|*.bmp|JPEG Images|*.jpg|All Files|*.*";
-            openFile.FilterIndex = 2;
-            openFile.InitialDirectory = Application.StartupPath + "\\ImageMenu";
+            OpenFileDialog openFile = new OpenFileDialog
+            {
+                Filter = "Bitmap Images|*.bmp|JPEG Images|*.jpg|All Files|*.*",
+                FilterIndex = 2,
+                InitialDirectory = Application.StartupPath + "\\ImageMenu"
+            };
+
             if (openFile.ShowDialog() == DialogResult.OK)
             {
                 ptbAnh.Image = Image.FromFile(openFile.FileName);
-                file = openFile.FileName.Split('\\');
-                imageAnh = Path.GetFileName(openFile.FileName);
-                ptbAnh.ImageLocation = openFile.FileName;
+                imageAnh = Path.GetFileName(openFile.FileName); 
+                ptbAnh.ImageLocation = openFile.FileName; 
             }
+           
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -102,25 +133,18 @@ namespace BTL_1.Menu
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            string tenMon = txtTenMon.Text;
-            string giaTien = txtDonGia.Text;
-            string anh = imageAnh;
-
-            // Xác nhận việc xóa với người dùng
             var confirmResult = MessageBox.Show("Bạn có chắc chắn muốn xóa món ăn này?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (confirmResult == DialogResult.No)
                 return;
 
-            // Câu lệnh xóa món ăn từ cơ sở dữ liệu
             string query = $"DELETE FROM MonAn WHERE MaDanhMuc = {MaDanhMuc} AND MaMonAn = {MaMonAn}";
 
             try
             {
-               
-                dtbase.ChangeData(query);  
+                dtbase.ChangeData(query);
                 MessageBox.Show("Món ăn đã được xóa thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                MonUpdated?.Invoke(this, EventArgs.Empty);  // Gọi sự kiện khi xóa thành công
-                this.Close();  // Đóng form sau khi xóa thành công
+                MonDeleted?.Invoke(this, EventArgs.Empty);
+                this.Close();
             }
             catch (Exception ex)
             {
@@ -128,5 +152,6 @@ namespace BTL_1.Menu
             }
         }
 
+        
     }
 }

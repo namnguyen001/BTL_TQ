@@ -30,10 +30,10 @@
         {
             this.panelControl = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.btnNCC = new Guna.UI2.WinForms.Guna2GradientButton();
             this.QLXK = new Guna.UI2.WinForms.Guna2GradientButton();
             this.QLNK = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnQLNL = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnNCC = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +66,30 @@
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1181, 73);
             this.guna2GradientPanel1.TabIndex = 4;
+            // 
+            // btnNCC
+            // 
+            this.btnNCC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnNCC.Animated = true;
+            this.btnNCC.BackColor = System.Drawing.Color.Transparent;
+            this.btnNCC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNCC.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNCC.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNCC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNCC.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNCC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNCC.FillColor = System.Drawing.Color.Transparent;
+            this.btnNCC.FillColor2 = System.Drawing.Color.Transparent;
+            this.btnNCC.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnNCC.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnNCC.ForeColor = System.Drawing.Color.Black;
+            this.btnNCC.Location = new System.Drawing.Point(344, 3);
+            this.btnNCC.Name = "btnNCC";
+            this.btnNCC.Size = new System.Drawing.Size(254, 67);
+            this.btnNCC.TabIndex = 3;
+            this.btnNCC.Text = "Quản lý nhà cung cấp";
+            this.btnNCC.UseTransparentBackground = true;
+            this.btnNCC.Click += new System.EventHandler(this.btnNCC_Click);
             // 
             // QLXK
             // 
@@ -137,30 +161,6 @@
             this.btnQLNL.UseTransparentBackground = true;
             this.btnQLNL.Click += new System.EventHandler(this.btnQLNL_Click);
             // 
-            // btnNCC
-            // 
-            this.btnNCC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnNCC.Animated = true;
-            this.btnNCC.BackColor = System.Drawing.Color.Transparent;
-            this.btnNCC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNCC.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNCC.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNCC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNCC.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNCC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNCC.FillColor = System.Drawing.Color.Transparent;
-            this.btnNCC.FillColor2 = System.Drawing.Color.Transparent;
-            this.btnNCC.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnNCC.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnNCC.ForeColor = System.Drawing.Color.Black;
-            this.btnNCC.Location = new System.Drawing.Point(344, 3);
-            this.btnNCC.Name = "btnNCC";
-            this.btnNCC.Size = new System.Drawing.Size(254, 67);
-            this.btnNCC.TabIndex = 3;
-            this.btnNCC.Text = "Quản lý nhà cung cấp";
-            this.btnNCC.UseTransparentBackground = true;
-            this.btnNCC.Click += new System.EventHandler(this.btnNCC_Click);
-            // 
             // QLKho_Control_UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -170,6 +170,7 @@
             this.Controls.Add(this.panelControl);
             this.Name = "QLKho_Control_UI";
             this.Size = new System.Drawing.Size(1208, 703);
+            this.Load += new System.EventHandler(this.QLKho_Control_UI_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

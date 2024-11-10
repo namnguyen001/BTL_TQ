@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtLoaiMon = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cbbLoaiMon = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnXoa = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnThoat = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnLuu = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txtDonGia = new Guna.UI2.WinForms.Guna2TextBox();
@@ -42,7 +43,6 @@
             this.ptbAnh = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.lbTieuDe = new System.Windows.Forms.Label();
-            this.btnXoa = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbAnh)).BeginInit();
@@ -51,8 +51,8 @@
             // 
             // guna2Panel3
             // 
+            this.guna2Panel3.Controls.Add(this.cbbLoaiMon);
             this.guna2Panel3.Controls.Add(this.btnXoa);
-            this.guna2Panel3.Controls.Add(this.txtLoaiMon);
             this.guna2Panel3.Controls.Add(this.btnThoat);
             this.guna2Panel3.Controls.Add(this.btnLuu);
             this.guna2Panel3.Controls.Add(this.txtDonGia);
@@ -66,25 +66,38 @@
             this.guna2Panel3.Size = new System.Drawing.Size(436, 383);
             this.guna2Panel3.TabIndex = 5;
             // 
-            // txtLoaiMon
+            // cbbLoaiMon
             // 
-            this.txtLoaiMon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLoaiMon.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtLoaiMon.DefaultText = "";
-            this.txtLoaiMon.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtLoaiMon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtLoaiMon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLoaiMon.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLoaiMon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLoaiMon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtLoaiMon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLoaiMon.Location = new System.Drawing.Point(169, 41);
-            this.txtLoaiMon.Name = "txtLoaiMon";
-            this.txtLoaiMon.PasswordChar = '\0';
-            this.txtLoaiMon.PlaceholderText = "";
-            this.txtLoaiMon.SelectedText = "";
-            this.txtLoaiMon.Size = new System.Drawing.Size(200, 36);
-            this.txtLoaiMon.TabIndex = 8;
+            this.cbbLoaiMon.BackColor = System.Drawing.Color.Transparent;
+            this.cbbLoaiMon.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbLoaiMon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbLoaiMon.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbLoaiMon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbLoaiMon.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbbLoaiMon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbbLoaiMon.ItemHeight = 30;
+            this.cbbLoaiMon.Location = new System.Drawing.Point(169, 42);
+            this.cbbLoaiMon.Name = "cbbLoaiMon";
+            this.cbbLoaiMon.Size = new System.Drawing.Size(140, 36);
+            this.cbbLoaiMon.TabIndex = 10;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnXoa.BorderRadius = 10;
+            this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXoa.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Location = new System.Drawing.Point(178, 331);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(106, 36);
+            this.btnXoa.TabIndex = 9;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThoat
             // 
@@ -97,7 +110,7 @@
             this.btnThoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnThoat.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(263, 269);
+            this.btnThoat.Location = new System.Drawing.Point(254, 279);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(106, 36);
             this.btnThoat.TabIndex = 7;
@@ -115,7 +128,7 @@
             this.btnLuu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(103, 269);
+            this.btnLuu.Location = new System.Drawing.Point(94, 279);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(106, 36);
             this.btnLuu.TabIndex = 6;
@@ -226,7 +239,7 @@
             this.ptbAnh.ImageRotate = 0F;
             this.ptbAnh.Location = new System.Drawing.Point(46, 77);
             this.ptbAnh.Name = "ptbAnh";
-            this.ptbAnh.Size = new System.Drawing.Size(223, 200);
+            this.ptbAnh.Size = new System.Drawing.Size(269, 252);
             this.ptbAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbAnh.TabIndex = 0;
             this.ptbAnh.TabStop = false;
@@ -244,30 +257,12 @@
             // 
             this.lbTieuDe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbTieuDe.AutoSize = true;
-            this.lbTieuDe.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTieuDe.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTieuDe.Location = new System.Drawing.Point(375, 18);
             this.lbTieuDe.Name = "lbTieuDe";
-            this.lbTieuDe.Size = new System.Drawing.Size(76, 22);
+            this.lbTieuDe.Size = new System.Drawing.Size(77, 23);
             this.lbTieuDe.TabIndex = 1;
             this.lbTieuDe.Text = "Món Ăn";
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnXoa.BorderRadius = 10;
-            this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnXoa.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(187, 321);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(106, 36);
-            this.btnXoa.TabIndex = 9;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // SuaMon
             // 
@@ -280,6 +275,7 @@
             this.Name = "SuaMon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SuaMon";
+            this.Load += new System.EventHandler(this.SuaMon_Load);
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
@@ -305,7 +301,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox ptbAnh;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label lbTieuDe;
-        private Guna.UI2.WinForms.Guna2TextBox txtLoaiMon;
         private Guna.UI2.WinForms.Guna2GradientButton btnXoa;
+        private Guna.UI2.WinForms.Guna2ComboBox cbbLoaiMon;
     }
 }

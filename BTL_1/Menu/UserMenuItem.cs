@@ -9,7 +9,8 @@ namespace BTL_1.Menu
     public partial class UserMenuItem : UserControl
     {
         classes.DataBaseProcess dtbase = new classes.DataBaseProcess();
-
+        public event EventHandler MonUpdated;
+        public event EventHandler MonDeleted;
         public UserMenuItem()
         {
             InitializeComponent();
@@ -54,11 +55,12 @@ namespace BTL_1.Menu
                 // Mở form SuaMon và truyền thông tin
                 SuaMon suaMon = new SuaMon(tenMon, giaTien, anh, tendm);
                 suaMon.MonUpdated += SuaMon_MonUpdated;
+                suaMon.MonDeleted += SuaMon_MonDeleted;
                 suaMon.Show();
             }
 
         }
-        private void SuaMon_MonUpdated(object sender, EventArgs e)
+        public void SuaMon_MonUpdated(object sender, EventArgs e)
         {
             // Cập nhật thông tin món ăn trong UserMenuItem sau khi sửa
             SuaMon suaMon = sender as SuaMon;
@@ -67,8 +69,23 @@ namespace BTL_1.Menu
                 this.TenMon = suaMon.TenMon;
                 this.GiaTien = suaMon.GiaTien;
                 this.Anh = suaMon.Anh;
-                ptbAnh.ImageLocation = Path.Combine(Application.StartupPath, "ImageMenu", suaMon.Anh);
+                
+                 MonUpdated?.Invoke(this, EventArgs.Empty);
             }
         }
+        public void SuaMon_MonDeleted(object sender, EventArgs e)
+        {
+            SuaMon suaMon = sender as SuaMon;
+            if (suaMon != null)
+            {
+                this.TenMon = null;
+                this.GiaTien = null;
+                this.Anh = null;
+                ptbAnh.ImageLocation ="";
+                MonDeleted?.Invoke(this, EventArgs.Empty);
+            }
+        }
+
+       
     }
 }

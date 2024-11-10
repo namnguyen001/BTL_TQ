@@ -71,16 +71,17 @@
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnTimKiem.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnTimKiem.BackColor = System.Drawing.Color.Transparent;
+            this.btnTimKiem.CheckedState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnTimKiem.HoverState.ImageSize = new System.Drawing.Size(30, 30);
             this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
             this.btnTimKiem.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnTimKiem.ImageRotate = 0F;
             this.btnTimKiem.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTimKiem.Location = new System.Drawing.Point(10, 61);
+            this.btnTimKiem.Location = new System.Drawing.Point(12, 86);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnTimKiem.Size = new System.Drawing.Size(30, 31);
+            this.btnTimKiem.PressedState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnTimKiem.Size = new System.Drawing.Size(30, 30);
             this.btnTimKiem.TabIndex = 1;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
@@ -93,9 +94,9 @@
             this.btnThemMon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnThemMon.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnThemMon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThemMon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThemMon.ForeColor = System.Drawing.Color.White;
-            this.btnThemMon.Location = new System.Drawing.Point(677, 61);
+            this.btnThemMon.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemMon.ForeColor = System.Drawing.Color.Black;
+            this.btnThemMon.Location = new System.Drawing.Point(760, 73);
             this.btnThemMon.Name = "btnThemMon";
             this.btnThemMon.Size = new System.Drawing.Size(126, 45);
             this.btnThemMon.TabIndex = 3;
@@ -129,10 +130,10 @@
             this.txtMonAn.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMonAn.ForeColor = System.Drawing.Color.Black;
             this.txtMonAn.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMonAn.Location = new System.Drawing.Point(59, 61);
+            this.txtMonAn.Location = new System.Drawing.Point(45, 85);
             this.txtMonAn.Name = "txtMonAn";
             this.txtMonAn.PasswordChar = '\0';
-            this.txtMonAn.PlaceholderText = "";
+            this.txtMonAn.PlaceholderText = "Tìm Kiếm Món Ăn";
             this.txtMonAn.SelectedText = "";
             this.txtMonAn.Size = new System.Drawing.Size(200, 31);
             this.txtMonAn.TabIndex = 4;
@@ -142,12 +143,12 @@
             // 
             this.guna2HtmlLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(443, 15);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(343, 15);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(70, 33);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(315, 35);
             this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "Menu";
+            this.guna2HtmlLabel1.Text = "Menu Món Ăn Nhà Hàng";
             // 
             // UserMenu
             // 

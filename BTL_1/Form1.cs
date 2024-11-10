@@ -74,5 +74,10 @@ namespace BTL_1
             UserControlKhachHang user = new UserControlKhachHang();
             Addmenu(user);
         }
+
+        private void Form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

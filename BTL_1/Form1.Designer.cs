@@ -195,6 +195,7 @@
             this.Controls.Add(this.pnhienthi);
             this.Controls.Add(this.pnmenu);
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form_Load);
             this.pnmenu.ResumeLayout(false);
             this.pnmenu.PerformLayout();
             this.ResumeLayout(false);

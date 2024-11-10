@@ -11,7 +11,7 @@ namespace BTL_1.classes
     internal class DataBaseProcess
     {
         string strConnect = "Data Source=PC-UTC\\MSSQLSERVER02;" +
-                "DataBase=QLNhaHang;User ID=sa;" +
+                "DataBase=QLNhaHang2;User ID=sa;" +
                 "Password=123;Integrated Security=false";
         SqlConnection sqlConnect = null;
 

@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BTL_1"
+    "\\BTL_1",
+    "\\BTL_1\\KhachHang"
   ],
-  "SelectedNode": "\\BTL_1\\DangNhap.cs",
+  "SelectedNode": "\\BTL_1\\KhachHang\\UserControlKhachHang.cs",
   "PreviewInSolutionExplorer": false
 }
