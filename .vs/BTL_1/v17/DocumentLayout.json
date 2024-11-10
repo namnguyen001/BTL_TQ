@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Study\\l\u1EADp tr\u00ECnh tr\u1EF1c quan\\BTL_TQ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|C:\\Study\\l\u1EADp tr\u00ECnh tr\u1EF1c quan\\BTL_TQ\\btl_1\\thongkehoadon\\chitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|solutionrelative:btl_1\\thongkehoadon\\chitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|c:\\study\\l\u1EADp tr\u00ECnh tr\u1EF1c quan\\btl_tq\\btl_1\\menu\\usermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|solutionrelative:btl_1\\menu\\usermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|C:\\Study\\l\u1EADp tr\u00ECnh tr\u1EF1c quan\\BTL_TQ\\btl_1\\thongkehoadon\\userhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|solutionrelative:btl_1\\thongkehoadon\\userhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|C:\\Study\\l\u1EADp tr\u00ECnh tr\u1EF1c quan\\BTL_TQ\\btl_1\\menu\\usermenuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|solutionrelative:btl_1\\menu\\usermenuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|C:\\Study\\l\u1EADp tr\u00ECnh tr\u1EF1c quan\\BTL_TQ\\btl_1\\menu\\usermenuitem.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|solutionrelative:btl_1\\menu\\usermenuitem.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|C:\\Study\\l\u1EADp tr\u00ECnh tr\u1EF1c quan\\BTL_TQ\\btl_1\\thongkehoadon\\userhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|solutionrelative:btl_1\\thongkehoadon\\userhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|C:\\Study\\l\u1EADp tr\u00ECnh tr\u1EF1c quan\\BTL_TQ\\btl_1\\menu\\usermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|solutionrelative:btl_1\\menu\\usermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|c:\\study\\l\u1EADp tr\u00ECnh tr\u1EF1c quan\\btl_tq\\btl_1\\thongkehoadon\\chitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|solutionrelative:btl_1\\thongkehoadon\\chitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7595DFD-0C14-4DBA-84F6-ED372AD08064}|BTL_1\\BTL_1.csproj|C:\\Study\\l\u1EADp tr\u00ECnh tr\u1EF1c quan\\BTL_TQ\\BTL_1\\Menu\\UserMenuItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "UserMenuItem.Designer.cs",
               "DocumentMoniker": "C:\\Study\\l\u1EADp tr\u00ECnh tr\u1EF1c quan\\BTL_TQ\\BTL_1\\Menu\\UserMenuItem.Designer.cs",
               "RelativeDocumentMoniker": "BTL_1\\Menu\\UserMenuItem.Designer.cs",
@@ -78,22 +78,24 @@
               "RelativeToolTip": "BTL_1\\Menu\\UserMenuItem.Designer.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAwwDwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T08:53:10.534Z"
+              "WhenOpened": "2024-11-10T08:53:10.534Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "UserMenuItem.cs [Design]",
               "DocumentMoniker": "C:\\Study\\l\u1EADp tr\u00ECnh tr\u1EF1c quan\\BTL_TQ\\BTL_1\\Menu\\UserMenuItem.cs",
               "RelativeDocumentMoniker": "BTL_1\\Menu\\UserMenuItem.cs",
               "ToolTip": "C:\\Study\\l\u1EADp tr\u00ECnh tr\u1EF1c quan\\BTL_TQ\\BTL_1\\Menu\\UserMenuItem.cs [Design]",
               "RelativeToolTip": "BTL_1\\Menu\\UserMenuItem.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T08:49:14.042Z"
+              "WhenOpened": "2024-11-10T08:49:14.042Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ChiTietHoaDon.cs [Design]",
               "DocumentMoniker": "C:\\Study\\l\u1EADp tr\u00ECnh tr\u1EF1c quan\\BTL_TQ\\BTL_1\\ThongKeHoaDon\\ChiTietHoaDon.cs",
               "RelativeDocumentMoniker": "BTL_1\\ThongKeHoaDon\\ChiTietHoaDon.cs",
@@ -105,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UserMenu.cs",
               "DocumentMoniker": "C:\\Study\\l\u1EADp tr\u00ECnh tr\u1EF1c quan\\BTL_TQ\\BTL_1\\Menu\\UserMenu.cs",
               "RelativeDocumentMoniker": "BTL_1\\Menu\\UserMenu.cs",
@@ -138,7 +140,8 @@
               "RelativeToolTip": "BTL_1\\Menu\\UserMenuItem.cs",
               "ViewState": "AQIAAEQAAAAAAAAAAAAwwFgAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T06:49:52.317Z"
+              "WhenOpened": "2024-11-07T06:49:52.317Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -150,8 +153,7 @@
               "RelativeToolTip": "BTL_1\\ThongKeHoaDon\\ChiTietHoaDon.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAASwB8AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T03:05:20.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-10T03:05:20.25Z"
             },
             {
               "$type": "Document",
